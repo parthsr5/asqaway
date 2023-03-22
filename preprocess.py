@@ -5,10 +5,13 @@ import os
 import re
 import time
 
-from skr_web_api import Submission
+# from skr_web_api import Submission
+class Submission():
+    def __init__(self, a, b):
+        pass
 
-email = os.environ['EMAIL']
-apikey = os.environ['API_KEY']
+email = ""#os.environ['EMAIL']
+apikey = ""#os.environ['API_KEY']
 inst = Submission(email, apikey)
 
 
@@ -76,9 +79,10 @@ def preprocess_list(datum, AA):
         for answer in answers:
             ind = snippet.find(answer)
             if ind > -1:
-                new_entry = {'id': f'{qid}_{i:04}', 'question': question, 'answers': [
-                    {'text': answer, 'answer_start': ind}]}
-                processed.append({'qas': [new_entry], 'context': snippet})
+                new_entry = {'id': f'{qid}_{i:04}', 'question': question,
+                             'answers': {'text': [answer], 'answer_start': [ind]},
+                             'type': datum['type'], 'context': snippet}
+                processed.append(new_entry)
                 i += 1
     return processed
 
@@ -87,7 +91,7 @@ def preprocess_factoid(datum, AA):
     i = 1
     qid = datum['id']
 
-    question = canonize(datum['body'])
+    question = canonize(datum['body'], AA)
 
     for snippet in datum['snippets']:
         snippet = canonize(snippet['text'], AA)
@@ -95,19 +99,20 @@ def preprocess_factoid(datum, AA):
 
         ind = snippet.find(answer)
         if ind > -1:
-            new_entry = {'id': f'{qid}_{i:04}', 'question': question, 'answers': [
-                {'text': answer, 'answer_start': ind}]}
-            processed.append({'qas': [new_entry], 'context': snippet})
+            new_entry = {'id': f'{qid}_{i:04}', 'question': question, 
+                         'answers': {'text': [answer], 'answer_start': [ind]},
+                         'type': datum['type'], 'context': snippet}
+            processed.append(new_entry)
             i += 1
     return processed
 
-def preprocess_dataset(dataset):
+def preprocess_dataset(dataset, AA):
     processed = []
     for datum in dataset:
         if datum['type'] == 'list':
-            processed.extend(preprocess_list(datum))
+            processed.extend(preprocess_list(datum, AA))
         elif datum['type'] == 'factoid':
-            processed.extend(preprocess_factoid(datum))
+            processed.extend(preprocess_factoid(datum, AA))
     return processed
 
 
@@ -115,20 +120,17 @@ if __name__ == "__main__":
     infile = "BioASQ-training11b/training11b.json"
     x = json.load(open(infile))
 
-    AA = load_AA(x['questions'])
-    processed = preprocess_dataset(x['questions'], AA)
-    out = {}
-    out['data'] = []
-    for i in x['data'][0]['paragraphs']:
-        data = i['qas'][0]
-        data['context'] = i['context']
-        data['answers'] = data['answers'][0]
-        data['answers']['answer_start'] = [data['answers']['answer_start']]
-        data['answers']['text'] = [data['answers']['text']]
-        out['data'].append(data)
-    with open('train_file.json', 'w') as f:
-        json.dump(out, f)
+    # Load the acronyms/abbreviations dict
+    # AA = load_AA(x['questions'])
+    AA = {}
 
+    # Process the file
+    processed = preprocess_dataset(x['questions'], AA)
+    out = {'data': processed}
+    with open('train_file.json', 'w') as f:
+        json.dump(out, f, indent=4)
+
+    # Split training file
     x = json.load(open("train_file.json"))
     data = x['data']
     random.Random(11797).shuffle(data)
