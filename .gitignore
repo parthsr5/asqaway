@@ -1,2 +1,6 @@
 .venv
+.ipynb_checkpoints/
 BioASQ-training11b/
+skr_web_python_api/
+umls/
+nohup.out

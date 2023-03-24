@@ -4,6 +4,11 @@ import random
 import os
 import re
 import time
+from tqdm import tqdm
+import pdb
+
+import concurrent
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 from pymetamap import MetaMap
 
@@ -11,6 +16,7 @@ metamap_base_dir = '/home/sourjyadip/asqaway/umls/public_mm/'
 metamap_bin_dir = 'bin/metamap20'
 metamap_pos_server_dir = 'bin/skrmedpostctl'
 metamap_wsd_server_dir = 'bin/wsdserverctl'
+MAX_THREADS = 32
 
 metam = MetaMap.get_instance(metamap_base_dir + metamap_bin_dir)
 
@@ -21,37 +27,49 @@ def get_AA(text):
                                          word_sense_disambiguation = True,
                                          composite_phrase = 1)
     for con in concepts:
-        if con.mm == "AA":
+        if hasattr(con, 'aa'):
+            # print(con)
             offset, length = tuple(int(x) for x in con.pos_info.split(":"))
-            word = text[offset:offset+length]
+            # print(type(offset), type(length), offset, length)
+            # pdb.set_trace()
+            word = con.short_form
             if word not in mappings:
-                mappings[word] = con.preferred_name
+                mappings[word] = con.long_form
     return mappings
 
 def load_AA_list(datum):
     AA = {}
     AA.update(get_AA(datum['body']))
+    # print(datum['exact_answer'][0][0], datum['snippets'][0])
+    # print('load_AA_list')
     for answer in datum['exact_answer']:
         AA.update(get_AA(answer[0]))
     for snippet in datum['snippets']:
-        AA.update(get_AA(snippet))
+        AA.update(get_AA(snippet['text']))
     return AA
 
 def load_AA_factoid(datum):
     AA = {}
+    # print(datum['body'], datum['exact_answer'][0], datum['snippets'][0])
+    # print('load_AA_factoid')
     AA.update(get_AA(datum['body']))
     AA.update(get_AA(datum['exact_answer'][0]))
     for snippet in datum['snippets']:
-        AA.update(get_AA(snippet))
+        AA.update(get_AA(snippet['text']))
     return AA
 
 def load_AA(dataset):
     AA = {}
-    for datum in dataset:
-        if datum['type'] == 'list':
-            AA.update(load_AA_list(datum))
-        elif datum['type'] == 'factoid':
-            AA.update(load_AA_factoid(datum))
+    with concurrent.futures.ThreadPoolExecutor(max_workers=MAX_THREADS) as executor:
+        futures = []
+        for datum in tqdm(dataset, desc='Submitting Jobs'):
+            if datum['type'] == 'list': futures.append(executor.submit(load_AA_list, datum))
+                # AA.update(load_AA_list(datum))
+            elif datum['type'] == 'factoid': futures.append(executor.submit(load_AA_factoid, datum))
+                # AA.update(load_AA_factoid(datum))
+        print(len(futures), 'jobs to process')
+        for future in tqdm(concurrent.futures.as_completed(futures), total=len(futures), desc="Running Jobs"):
+            AA.update(future.result())
     return AA
 
 
@@ -117,6 +135,11 @@ if __name__ == "__main__":
 
     # Load the acronyms/abbreviations dict
     AA = load_AA(x['questions'])
+    try:
+        with open('umls_data.json', 'w') as f:
+            print('Length of AA -', len(AA))
+            json.dump(AA, f)
+    except Exception as e: print(e)
 
     # Process the file
     processed = preprocess_dataset(x['questions'], AA)
