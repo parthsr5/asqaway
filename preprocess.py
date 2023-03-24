@@ -5,32 +5,27 @@ import os
 import re
 import time
 
-# from skr_web_api import Submission
-class Submission():
-    def __init__(self, a, b):
-        pass
+from pymetamap import MetaMap
 
-email = ""#os.environ['EMAIL']
-apikey = ""#os.environ['API_KEY']
-inst = Submission(email, apikey)
+metamap_base_dir = '/home/sourjyadip/asqaway/umls/public_mm/'
+metamap_bin_dir = 'bin/metamap20'
+metamap_pos_server_dir = 'bin/skrmedpostctl'
+metamap_wsd_server_dir = 'bin/wsdserverctl'
+
+metam = MetaMap.get_instance(metamap_base_dir + metamap_bin_dir)
 
 
 def get_AA(text):
-    inst.init_mm_interactive(text)
-    response = inst.submit()
     mappings = {}
-    if response.status_code == 200:
-        content = response.content.decode().split("\n")
-        for line in content[1:]:
-            m = line.split("|")
-            if len(m) > 1 and m[1] == "AA":
-                offset, length = tuple(int(x) for x in m[8].split(":"))
-                word = text[offset: offset + length]
-                if word not in mappings:
-                    mappings[word] = m[3]
-    else:
-        raise NotImplementedError
-    
+    concepts, _ = metam.extract_concepts([text],
+                                         word_sense_disambiguation = True,
+                                         composite_phrase = 1)
+    for con in concepts:
+        if con.mm == "AA":
+            offset, length = tuple(int(x) for x in con.pos_info.split(":"))
+            word = text[offset:offset+length]
+            if word not in mappings:
+                mappings[word] = con.preferred_name
     return mappings
 
 def load_AA_list(datum):
@@ -121,8 +116,7 @@ if __name__ == "__main__":
     x = json.load(open(infile))
 
     # Load the acronyms/abbreviations dict
-    # AA = load_AA(x['questions'])
-    AA = {}
+    AA = load_AA(x['questions'])
 
     # Process the file
     processed = preprocess_dataset(x['questions'], AA)
