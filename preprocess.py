@@ -72,22 +72,22 @@ def load_AA(dataset):
     return AA
 
 
-def canonize(text, AA):
+def canonize(text):
     for word, new_word in AA.items():
         text = re.sub(f"\\b{word}\\b", re.escape(new_word), text)
     return text
 
-def preprocess_list(datum, AA):
+def preprocess_list(datum):
     processed = []
     i = 1
     qid = datum['id']
 
-    question = canonize(datum['body'], AA)
+    question = canonize(datum['body'])
 
-    answers = [canonize(a[0], AA) for a in datum['exact_answer']]
+    answers = [canonize(a[0]) for a in datum['exact_answer']]
     
     for snippet in datum['snippets']:
-        snippet = canonize(snippet['text'], AA)
+        snippet = canonize(snippet['text'])
         for answer in answers:
             ind = snippet.find(answer)
             if ind > -1:
@@ -98,16 +98,16 @@ def preprocess_list(datum, AA):
                 i += 1
     return processed
 
-def preprocess_factoid(datum, AA):
+def preprocess_factoid(datum):
     processed = []
     i = 1
     qid = datum['id']
 
-    question = canonize(datum['body'], AA)
+    question = canonize(datum['body'])
 
     for snippet in datum['snippets']:
-        snippet = canonize(snippet['text'], AA)
-        answer = canonize(datum['exact_answer'][0], AA)
+        snippet = canonize(snippet['text'])
+        answer = canonize(datum['exact_answer'][0])
 
         ind = snippet.find(answer)
         if ind > -1:
@@ -118,13 +118,18 @@ def preprocess_factoid(datum, AA):
             i += 1
     return processed
 
-def preprocess_dataset(dataset, AA):
+def preprocess_dataset(dataset):
     processed = []
-    for datum in tqdm(dataset):
-        if datum['type'] == 'list':
-            processed.extend(preprocess_list(datum, AA))
-        elif datum['type'] == 'factoid':
-            processed.extend(preprocess_factoid(datum, AA))
+    with concurrent.futures.ThreadPoolExecutor(max_workers=1) as executor:
+        futures = []
+        for datum in tqdm(dataset, desc='Submitting Jobs, preprocess_dataset'):
+            if datum['type'] == 'list': futures.append(executor.submit(preprocess_list, datum))
+                # processed.extend(preprocess_list(datum, AA))
+            elif datum['type'] == 'factoid': futures.append(executor.submit(preprocess_factoid, datum))
+                # processed.extend(preprocess_factoid(datum, AA))
+        print(len(futures), 'jobs to process')
+        for future in tqdm(concurrent.futures.as_completed(futures), total=len(futures), desc="Running Jobs"):
+            processed.extend(future.result())
     return processed
 
 
@@ -134,18 +139,20 @@ if __name__ == "__main__":
 
     # Load the acronyms/abbreviations dict
     if not os.path.exists("umls_data.json"):
+        print('UMLS data does not exist')
         AA = load_AA(x['questions'])
-        AA = {}
+        # AA = {}
         try:
             with open('umls_data.json', 'w') as f:
                 print('Length of AA -', len(AA))
                 json.dump(AA, f)
         except Exception as e: print(e)
     else:
+        print('Loading UMLS data')
         AA = json.load(open('umls_data.json'))
 
     # Process the file
-    processed = preprocess_dataset(x['questions'], AA)
+    processed = preprocess_dataset(x['questions'])
     out = {'data': processed}
     with open('train_file.json', 'w') as f:
         json.dump(out, f, indent=4)
