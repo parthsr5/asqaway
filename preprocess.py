@@ -1,9 +1,7 @@
 import json
-import sys
 import random
 import os
 import re
-import time
 from tqdm import tqdm
 import pdb
 
@@ -11,6 +9,7 @@ import concurrent
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 from pymetamap import MetaMap
+
 
 metamap_base_dir = '/home/sourjyadip/asqaway/umls/public_mm/'
 metamap_bin_dir = 'bin/metamap20'
@@ -75,7 +74,7 @@ def load_AA(dataset):
 
 def canonize(text, AA):
     for word, new_word in AA.items():
-        text = re.sub(rf"\b{word}\b", new_word, text)
+        text = re.sub(f"\\b{word}\\b", re.escape(new_word), text)
     return text
 
 def preprocess_list(datum, AA):
@@ -121,7 +120,7 @@ def preprocess_factoid(datum, AA):
 
 def preprocess_dataset(dataset, AA):
     processed = []
-    for datum in dataset:
+    for datum in tqdm(dataset):
         if datum['type'] == 'list':
             processed.extend(preprocess_list(datum, AA))
         elif datum['type'] == 'factoid':
@@ -134,12 +133,16 @@ if __name__ == "__main__":
     x = json.load(open(infile))
 
     # Load the acronyms/abbreviations dict
-    AA = load_AA(x['questions'])
-    try:
-        with open('umls_data.json', 'w') as f:
-            print('Length of AA -', len(AA))
-            json.dump(AA, f)
-    except Exception as e: print(e)
+    if not os.path.exists("umls_data.json"):
+        AA = load_AA(x['questions'])
+        AA = {}
+        try:
+            with open('umls_data.json', 'w') as f:
+                print('Length of AA -', len(AA))
+                json.dump(AA, f)
+        except Exception as e: print(e)
+    else:
+        AA = json.load(open('umls_data.json'))
 
     # Process the file
     processed = preprocess_dataset(x['questions'], AA)
