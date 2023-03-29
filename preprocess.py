@@ -135,6 +135,25 @@ def preprocess_dataset(dataset, AA):
             processed.extend(preprocess_factoid(datum, AA))
     return processed
 
+def generate_splits(dataset):
+    data = x['data']
+    s = set()
+    for i in data:
+        s.add(i['id'][:i['id'].find('_')])
+    q_list = list(s)
+    random.Random(11797).shuffle(q_list)
+    split_index = int(len(q_list)*0.8)
+    train_q = q_list[:split_index]
+    test_q = q_list[split_index:]
+    train_data = {"data": []}
+    test_data = {"data": []}
+    for i in data:
+        q_id = i['id'][:i['id'].find('_')]
+        if q_id in train_q:
+            train_data['data'].append(i)
+        elif q_id in test_q:
+            test_data['data'].append(i)
+    return train_data, test_data
 
 if __name__ == "__main__":
     infile = "BioASQ-training11b/training11b.json"
@@ -156,3 +175,8 @@ if __name__ == "__main__":
     out = {'data': processed}
     with open('train_file.json', 'w') as f:
         json.dump(out, f, indent=4)
+    train_data, test_data = generate_splits(out)
+    with open('train_file_80.json', 'w') as f:
+        json.dump(train_data, f)
+    with open('test_file_80.json', 'w') as f:
+        json.dump(test_data, f)
