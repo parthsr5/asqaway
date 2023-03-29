@@ -72,22 +72,30 @@ def load_AA(dataset):
     return AA
 
 
-def canonize(text):
-    for word, new_word in AA.items():
-        text = re.sub(f"\\b{word}\\b", re.escape(new_word), text)
+def canonize(text, AA):
+    for word, new_word in sorted(AA.items(), key=lambda x: len(x[0]), reverse=True):
+        new_word = new_word.replace("\\u", "\\\\u")
+        try:
+            text = re.sub(f"\\b{word}\\b", new_word, text)
+        except Exception as e:
+            print("word:", word)
+            print("new_word:", new_word)
+            print("text:", text)
+            print(e)
+            print()
     return text
 
-def preprocess_list(datum):
+def preprocess_list(datum, AA):
     processed = []
     i = 1
     qid = datum['id']
 
-    question = canonize(datum['body'])
+    question = canonize(datum['body'], AA)
 
-    answers = [canonize(a[0]) for a in datum['exact_answer']]
+    answers = [canonize(a[0], AA) for a in datum['exact_answer']]
     
     for snippet in datum['snippets']:
-        snippet = canonize(snippet['text'])
+        snippet = canonize(snippet['text'], AA)
         for answer in answers:
             ind = snippet.find(answer)
             if ind > -1:
@@ -98,16 +106,16 @@ def preprocess_list(datum):
                 i += 1
     return processed
 
-def preprocess_factoid(datum):
+def preprocess_factoid(datum, AA):
     processed = []
     i = 1
     qid = datum['id']
 
-    question = canonize(datum['body'])
+    question = canonize(datum['body'], AA)
 
     for snippet in datum['snippets']:
-        snippet = canonize(snippet['text'])
-        answer = canonize(datum['exact_answer'][0])
+        snippet = canonize(snippet['text'], AA)
+        answer = canonize(datum['exact_answer'][0], AA)
 
         ind = snippet.find(answer)
         if ind > -1:
@@ -118,18 +126,13 @@ def preprocess_factoid(datum):
             i += 1
     return processed
 
-def preprocess_dataset(dataset):
+def preprocess_dataset(dataset, AA):
     processed = []
-    with concurrent.futures.ThreadPoolExecutor(max_workers=1) as executor:
-        futures = []
-        for datum in tqdm(dataset, desc='Submitting Jobs, preprocess_dataset'):
-            if datum['type'] == 'list': futures.append(executor.submit(preprocess_list, datum))
-                # processed.extend(preprocess_list(datum, AA))
-            elif datum['type'] == 'factoid': futures.append(executor.submit(preprocess_factoid, datum))
-                # processed.extend(preprocess_factoid(datum, AA))
-        print(len(futures), 'jobs to process')
-        for future in tqdm(concurrent.futures.as_completed(futures), total=len(futures), desc="Running Jobs"):
-            processed.extend(future.result())
+    for datum in tqdm(dataset):
+        if datum['type'] == 'list':
+            processed.extend(preprocess_list(datum, AA))
+        elif datum['type'] == 'factoid':
+            processed.extend(preprocess_factoid(datum, AA))
     return processed
 
 
@@ -139,36 +142,17 @@ if __name__ == "__main__":
 
     # Load the acronyms/abbreviations dict
     if not os.path.exists("umls_data.json"):
-        print('UMLS data does not exist')
         AA = load_AA(x['questions'])
-        # AA = {}
         try:
             with open('umls_data.json', 'w') as f:
                 print('Length of AA -', len(AA))
                 json.dump(AA, f)
         except Exception as e: print(e)
     else:
-        print('Loading UMLS data')
         AA = json.load(open('umls_data.json'))
 
     # Process the file
-    processed = preprocess_dataset(x['questions'])
+    processed = preprocess_dataset(x['questions'], AA)
     out = {'data': processed}
     with open('train_file.json', 'w') as f:
         json.dump(out, f, indent=4)
-
-    # Split training file
-    x = json.load(open("train_file.json"))
-    data = x['data']
-    random.Random(11797).shuffle(data)
-    split_index = int(len(data)*0.8)
-    train_data = data[:split_index]
-    test_data = data[split_index:]
-
-    output_train = {"data": train_data}
-    output_test = {"data": test_data}
-
-    with open('train_file_80.json', 'w') as f:
-        json.dump(output_train, f)
-    with open('test_file_80.json', 'w') as f:
-        json.dump(output_test, f)
