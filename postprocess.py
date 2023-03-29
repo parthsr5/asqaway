@@ -40,10 +40,11 @@ if __name__ == "__main__":
         preds[real_id].extend(pred)
 
     # Check for overlapping CIDs and keep if non-overlapping
+    answers = {}
     for id, pred in preds.items():
         pred = sorted(pred, key=lambda x: x['probability'], reverse=True)
         cui_set = set()
-        answers = []
+        answers[id] = []
 
         # get answers
         for p in pred:
@@ -51,17 +52,17 @@ if __name__ == "__main__":
                 break
             p_cui_set = get_cuis(p['text'])
             if cui_set.isdisjoint(p_cui_set):
-                answers.append(p['text'])
+                answers[id].append(p)
                 cui_set = cui_set.union(p_cui_set)
         
-        # update original question
-        for i, q in enumerate(questions['questions']):
-            if q['id'] == id:
-                break
-        if questions['questions'][i]['type'] == 'list':
-            questions['questions'][0]['exact_answer'] = [[ans] for ans in answers]
-        elif questions['questions'][i]['type'] == 'factoid':
-            questions['questions'][0]['exact_answer'] = [[ans] for ans in answers[:5]]
+        # # update original question
+        # for i, q in enumerate(questions['questions']):
+        #     if q['id'] == id:
+        #         break
+        # if questions['questions'][i]['type'] == 'list':
+        #     questions['questions'][0]['exact_answer'] = [[ans] for ans in answers]
+        # elif questions['questions'][i]['type'] == 'factoid':
+        #     questions['questions'][0]['exact_answer'] = [[ans] for ans in answers[:5]]
     
     with open("final_answers.json", "w") as f:
-        json.dump(questions, f, indent=4)
+        json.dump(answers, f, indent=4)
