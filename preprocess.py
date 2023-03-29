@@ -158,17 +158,17 @@ if __name__ == "__main__":
         json.dump(out, f, indent=4)
 
     # Split training file
-    x = json.load(open("train_file.json"))
-    data = x['data']
-    random.Random(11797).shuffle(data)
-    split_index = int(len(data)*0.8)
-    train_data = data[:split_index]
-    test_data = data[split_index:]
+    # x = json.load(open("train_file.json"))
+    # data = x['data']
+    # random.Random(11797).shuffle(data)
+    # split_index = int(len(data)*0.8)
+    # train_data = data[:split_index]
+    # test_data = data[split_index:]
 
-    output_train = {"data": train_data}
-    output_test = {"data": test_data}
+    # output_train = {"data": train_data}
+    # output_test = {"data": test_data}
 
-    with open('train_file_80.json', 'w') as f:
-        json.dump(output_train, f)
-    with open('test_file_80.json', 'w') as f:
-        json.dump(output_test, f)
+    # with open('train_file_80.json', 'w') as f:
+    #     json.dump(output_train, f)
+    # with open('test_file_80.json', 'w') as f:
+    #     json.dump(output_test, f)
