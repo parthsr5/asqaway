@@ -122,22 +122,22 @@ def preprocess_dataset(dataset, AA):
 
 
 if __name__ == "__main__":
-    infile = "BioASQ-training11b/training11b.json"
+    infile = "test/BioASQ-task11bPhaseB-testset1.json"
     x = json.load(open(infile))
 
     # Load the acronyms/abbreviations dict
-    if not os.path.exists("umls_data.json"):
+    if not os.path.exists("umls_data_test.json"):
         AA = load_AA(x['questions'])
         try:
-            with open('umls_data.json', 'w') as f:
+            with open('umls_data_test.json', 'w') as f:
                 print('Length of AA -', len(AA))
                 json.dump(AA, f)
         except Exception as e: print(e)
     else:
-        AA = json.load(open('umls_data.json'))
+        AA = json.load(open('umls_data_test.json'))
 
     # Process the file
     processed = preprocess_dataset(x['questions'], AA)
     out = {'data': processed}
-    with open('train_file.json', 'w') as f:
+    with open('test/test1_file.json', 'w') as f:
         json.dump(out, f, indent=4)

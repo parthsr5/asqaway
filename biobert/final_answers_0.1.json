@@ -1,0 +1,358 @@
+{
+    "5505edac8e1671127b000005": [
+        {
+            "start_logit": 6.171993255615234,
+            "end_logit": 6.685172080993652,
+            "text": "Hydrophilic Interaction Chromatography",
+            "probability": 0.8858203291893005
+        }
+    ],
+    "5518e7da622b194345000004": [
+        {
+            "start_logit": 6.214005470275879,
+            "end_logit": 5.665495872497559,
+            "text": "c-Jun NH2-terminal kinase (Jnk)",
+            "probability": 0.8242348432540894
+        }
+    ],
+    "533f9df0c45e133714000016": [
+        {
+            "start_logit": 7.644556999206543,
+            "end_logit": 8.263055801391602,
+            "text": "Physical activity",
+            "probability": 0.9989016056060791
+        },
+        {
+            "start_logit": 5.165027618408203,
+            "end_logit": 7.0663557052612305,
+            "text": "whole-body acceleration",
+            "probability": 0.2944771945476532
+        }
+    ],
+    "52bf19c503868f1b06000001": [
+        {
+            "start_logit": 6.929018020629883,
+            "end_logit": 7.259043216705322,
+            "text": "autosomal dominant",
+            "probability": 0.9961175918579102
+        }
+    ],
+    "56c1f02cef6e39474100004c": [
+        {
+            "start_logit": 7.463248252868652,
+            "end_logit": 7.527082443237305,
+            "text": "telomerase",
+            "probability": 0.9702457785606384
+        },
+        {
+            "start_logit": 6.040585517883301,
+            "end_logit": 4.2315449714660645,
+            "text": "telomerase reverse transcriptase",
+            "probability": 0.3145521283149719
+        }
+    ],
+    "571e1e11bb137a4b0c000004": [
+        {
+            "start_logit": 6.447681427001953,
+            "end_logit": 6.504372596740723,
+            "text": "genital infections",
+            "probability": 0.6306378245353699
+        },
+        {
+            "start_logit": 6.662206172943115,
+            "end_logit": 6.419117450714111,
+            "text": "decrease in blood pressure",
+            "probability": 0.1781264841556549
+        }
+    ],
+    "5709e4b2cf1c32585100001c": [
+        {
+            "start_logit": 5.578246593475342,
+            "end_logit": 5.052459716796875,
+            "text": "Dishevelled-1",
+            "probability": 0.9715015888214111
+        },
+        {
+            "start_logit": 4.241544246673584,
+            "end_logit": 4.55010986328125,
+            "text": "Wnt-1",
+            "probability": 0.39045000076293945
+        },
+        {
+            "start_logit": 6.106410503387451,
+            "end_logit": 6.021923542022705,
+            "text": "Dishevelled-1",
+            "probability": 0.36617186665534973
+        },
+        {
+            "start_logit": 6.106410503387451,
+            "end_logit": 6.021923542022705,
+            "text": "Dishevelled-1",
+            "probability": 0.36617186665534973
+        },
+        {
+            "start_logit": 6.177609443664551,
+            "end_logit": 6.129598617553711,
+            "text": "Dishevelled-1",
+            "probability": 0.360687255859375
+        },
+        {
+            "start_logit": 6.177609443664551,
+            "end_logit": 6.129598617553711,
+            "text": "Dishevelled-1",
+            "probability": 0.360687255859375
+        },
+        {
+            "start_logit": 6.177609443664551,
+            "end_logit": 6.088910102844238,
+            "text": "Dishevelled-1 and Dishevelled-3",
+            "probability": 0.3463059961795807
+        },
+        {
+            "start_logit": 6.177609443664551,
+            "end_logit": 6.088910102844238,
+            "text": "Dishevelled-1 and Dishevelled-3",
+            "probability": 0.3463059961795807
+        },
+        {
+            "start_logit": 6.409025192260742,
+            "end_logit": 6.250211715698242,
+            "text": "Dishevelled-1 and Dishevelled-3",
+            "probability": 0.3427712023258209
+        },
+        {
+            "start_logit": 6.409025192260742,
+            "end_logit": 6.250211715698242,
+            "text": "Dishevelled-1 and Dishevelled-3",
+            "probability": 0.3427712023258209
+        },
+        {
+            "start_logit": 6.409025192260742,
+            "end_logit": 6.207685470581055,
+            "text": "Dishevelled-1",
+            "probability": 0.32850000262260437
+        },
+        {
+            "start_logit": 6.409025192260742,
+            "end_logit": 6.207685470581055,
+            "text": "Dishevelled-1",
+            "probability": 0.32850000262260437
+        },
+        {
+            "start_logit": 6.31447696685791,
+            "end_logit": 6.250211715698242,
+            "text": "Dishevelled-3",
+            "probability": 0.3118476867675781
+        },
+        {
+            "start_logit": 6.31447696685791,
+            "end_logit": 6.250211715698242,
+            "text": "Dishevelled-3",
+            "probability": 0.3118476867675781
+        },
+        {
+            "start_logit": 6.106410503387451,
+            "end_logit": 5.834702491760254,
+            "text": "Dishevelled-1 (Dishevelled-1) and Dishevelled-2",
+            "probability": 0.30365172028541565
+        },
+        {
+            "start_logit": 6.106410503387451,
+            "end_logit": 5.834702491760254,
+            "text": "Dishevelled-1 (Dishevelled-1) and Dishevelled-2",
+            "probability": 0.30365172028541565
+        },
+        {
+            "start_logit": 5.988626480102539,
+            "end_logit": 6.088910102844238,
+            "text": "Dishevelled-3",
+            "probability": 0.28667229413986206
+        },
+        {
+            "start_logit": 5.988626480102539,
+            "end_logit": 6.088910102844238,
+            "text": "Dishevelled-3",
+            "probability": 0.28667229413986206
+        },
+        {
+            "start_logit": 5.7240376472473145,
+            "end_logit": 5.834702491760254,
+            "text": "Dishevelled-2",
+            "probability": 0.2071637213230133
+        },
+        {
+            "start_logit": 5.7240376472473145,
+            "end_logit": 5.834702491760254,
+            "text": "Dishevelled-2",
+            "probability": 0.2071637213230133
+        },
+        {
+            "start_logit": 6.106410503387451,
+            "end_logit": 4.830920219421387,
+            "text": "Dishevelled-1 (Dishevelled-1)",
+            "probability": 0.1112855076789856
+        },
+        {
+            "start_logit": 6.106410503387451,
+            "end_logit": 4.830920219421387,
+            "text": "Dishevelled-1 (Dishevelled-1)",
+            "probability": 0.1112855076789856
+        }
+    ],
+    "56c1f005ef6e39474100003a": [
+        {
+            "start_logit": 7.2463178634643555,
+            "end_logit": 7.444820404052734,
+            "text": "interleukin-4",
+            "probability": 0.9985418319702148
+        },
+        {
+            "start_logit": 7.014406204223633,
+            "end_logit": 6.97921085357666,
+            "text": "interleukin-4/Interleukin-13",
+            "probability": 0.35150396823883057
+        }
+    ],
+    "513ce3c8bee46bd34c000008": [
+        {
+            "start_logit": 6.300281524658203,
+            "end_logit": 6.708178997039795,
+            "text": "SOX6",
+            "probability": 0.9991674423217773
+        },
+        {
+            "start_logit": 6.537360668182373,
+            "end_logit": 6.556812286376953,
+            "text": "MSX2",
+            "probability": 0.9982571005821228
+        },
+        {
+            "start_logit": 6.505563735961914,
+            "end_logit": 6.532051086425781,
+            "text": "RECQL4",
+            "probability": 0.9964898228645325
+        },
+        {
+            "start_logit": 5.697827339172363,
+            "end_logit": 6.0580644607543945,
+            "text": "FGFR2",
+            "probability": 0.995917022228241
+        },
+        {
+            "start_logit": 6.474339485168457,
+            "end_logit": 6.572404861450195,
+            "text": "fibroblast growth factor receptor 3",
+            "probability": 0.9462560415267944
+        },
+        {
+            "start_logit": 5.6244049072265625,
+            "end_logit": 6.428421974182129,
+            "text": "factor receptor 3",
+            "probability": 0.8896493911743164
+        },
+        {
+            "start_logit": 7.767922878265381,
+            "end_logit": 4.494585990905762,
+            "text": "TWIST",
+            "probability": 0.7107118964195251
+        },
+        {
+            "start_logit": 6.1132354736328125,
+            "end_logit": 6.0470194816589355,
+            "text": "PHP1A",
+            "probability": 0.5524492859840393
+        },
+        {
+            "start_logit": 6.379107475280762,
+            "end_logit": 6.0790205001831055,
+            "text": "fibroblast growth factor receptor 1",
+            "probability": 0.42336344718933105
+        },
+        {
+            "start_logit": 6.379107475280762,
+            "end_logit": 4.682952404022217,
+            "text": "fibroblast growth factor receptor",
+            "probability": 0.1048114001750946
+        }
+    ],
+    "553fa78b1d53b76422000007": [
+        {
+            "start_logit": 5.403686046600342,
+            "end_logit": 5.328777313232422,
+            "text": "let-7i",
+            "probability": 0.9990425705909729
+        },
+        {
+            "start_logit": 6.897144317626953,
+            "end_logit": 6.8698954582214355,
+            "text": "micro-RNAs-21",
+            "probability": 0.998989999294281
+        },
+        {
+            "start_logit": 6.9111175537109375,
+            "end_logit": 6.689184665679932,
+            "text": "micro-RNAs-203",
+            "probability": 0.9983187913894653
+        },
+        {
+            "start_logit": 7.139193058013916,
+            "end_logit": 7.160055160522461,
+            "text": "micro-RNAs-200c",
+            "probability": 0.9982378482818604
+        },
+        {
+            "start_logit": 6.641654014587402,
+            "end_logit": 6.512084484100342,
+            "text": "micro-RNAs-100",
+            "probability": 0.9941018223762512
+        },
+        {
+            "start_logit": 6.543004035949707,
+            "end_logit": 6.22369384765625,
+            "text": "micro-RNAs-200a",
+            "probability": 0.7591133713722229
+        },
+        {
+            "start_logit": 6.5792555809021,
+            "end_logit": 6.317094802856445,
+            "text": "micro-RNAs-510",
+            "probability": 0.37256932258605957
+        },
+        {
+            "start_logit": 6.86745548248291,
+            "end_logit": 6.784830093383789,
+            "text": "micro-RNAs-152 and micro-RNAs-148a",
+            "probability": 0.3363243639469147
+        },
+        {
+            "start_logit": 6.554221153259277,
+            "end_logit": 6.106904983520508,
+            "text": "micro-RNAs-509-5p",
+            "probability": 0.2944762706756592
+        },
+        {
+            "start_logit": 6.49056339263916,
+            "end_logit": 6.501883506774902,
+            "text": "microRNA 132",
+            "probability": 0.15118816494941711
+        },
+        {
+            "start_logit": 6.49745512008667,
+            "end_logit": 6.340788841247559,
+            "text": "micro-RNAs-26a",
+            "probability": 0.12958301603794098
+        },
+        {
+            "start_logit": 6.419153213500977,
+            "end_logit": 6.091036796569824,
+            "text": "micro-RNAs-508-3p",
+            "probability": 0.11033870279788971
+        },
+        {
+            "start_logit": 6.422503471374512,
+            "end_logit": 6.2509331703186035,
+            "text": "micro-RNAs-145",
+            "probability": 0.10989389568567276
+        }
+    ]
+}
