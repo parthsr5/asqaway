@@ -15,7 +15,8 @@ metamap_bin_dir = 'bin/metamap20'
 metamap_pos_server_dir = 'bin/skrmedpostctl'
 metamap_wsd_server_dir = 'bin/wsdserverctl'
 
-model = "biom-albert"
+models = "biom-electra biom-albert".split()
+split = "predict"
 MAX_THREADS = 32
 
 metam = MetaMap.get_instance(metamap_base_dir + metamap_bin_dir)
@@ -46,39 +47,41 @@ def remove_synonyms(id, pred):
     return id, answers
 
 if __name__ == "__main__":
-    prediction_file = f"{model}/eval_nbest_predictions.json"
-    with open(prediction_file, "r") as f:
-        predictions = json.load(f)
+    for model in models:
+        print("*"*5, model, split, "*"*5)
+        prediction_file = f"{model}/{split}_nbest_predictions.json"
+        with open(prediction_file, "r") as f:
+            predictions = json.load(f)
 
-    # question_file = ""
-    # with open(question_file, "r") as f:
-    #     questions = json.load(f)
+        # question_file = ""
+        # with open(question_file, "r") as f:
+        #     questions = json.load(f)
 
-    # Combine all predictions for same question
-    preds = defaultdict(list)
-    for id, pred in predictions.items():
-        real_id = id.split("_")[0]
-        preds[real_id].extend(pred)
+        # Combine all predictions for same question
+        preds = defaultdict(list)
+        for id, pred in predictions.items():
+            real_id = id.split("_")[0]
+            preds[real_id].extend(pred)
 
-    # Check for overlapping CIDs and keep if non-overlapping
-    answers = {}
-    with concurrent.futures.ThreadPoolExecutor(max_workers=MAX_THREADS) as executor:
-        futures = []
-        for id, pred in tqdm(list(preds.items()), desc="Submitting Jobs, remove_synonyms"):            
-            futures.append(executor.submit(remove_synonyms, id, pred))
-            
-        for future in tqdm(concurrent.futures.as_completed(futures), total=len(futures), desc="Running Jobs"):
-            id, ans = future.result()
-            answers[id] = ans
-            
-        # # update original question
-        # for i, q in enumerate(questions['questions']):
-        #     if q['id'] == id:
-        #         break
-        # if questions['questions'][i]['type'] == 'list':
-        #     questions['questions'][0]['exact_answer'] = [[ans] for ans in answers]
-        # elif questions['questions'][i]['type'] == 'factoid':
-        #     questions['questions'][0]['exact_answer'] = [[ans] for ans in answers[:5]]
-    
-    with open(f"{model}/final_answers_{CONF_THRESH}.json", "w") as f:
-        json.dump(answers, f, indent=4)
+        # Check for overlapping CIDs and keep if non-overlapping
+        answers = {}
+        with concurrent.futures.ThreadPoolExecutor(max_workers=MAX_THREADS) as executor:
+            futures = []
+            for id, pred in tqdm(list(preds.items()), desc="Submitting Jobs, remove_synonyms"):            
+                futures.append(executor.submit(remove_synonyms, id, pred))
+
+            for future in tqdm(concurrent.futures.as_completed(futures), total=len(futures), desc="Running Jobs"):
+                id, ans = future.result()
+                answers[id] = ans
+
+            # # update original question
+            # for i, q in enumerate(questions['questions']):
+            #     if q['id'] == id:
+            #         break
+            # if questions['questions'][i]['type'] == 'list':
+            #     questions['questions'][0]['exact_answer'] = [[ans] for ans in answers]
+            # elif questions['questions'][i]['type'] == 'factoid':
+            #     questions['questions'][0]['exact_answer'] = [[ans] for ans in answers[:5]]
+
+        with open(f"{model}/final_answers_{split}_{CONF_THRESH}.json", "w") as f:
+            json.dump(answers, f, indent=4)

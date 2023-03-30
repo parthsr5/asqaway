@@ -1,0 +1,2176 @@
+{
+    "6415c599690f196b51000013": [
+        {
+            "start_logit": 7.58729362487793,
+            "end_logit": 6.028872489929199,
+            "text": "Merck & Co., Inc",
+            "probability": 0.5479835867881775
+        },
+        {
+            "start_logit": 7.58729362487793,
+            "end_logit": -2.564455509185791,
+            "text": "Merc",
+            "probability": 0.00010156226198887452
+        },
+        {
+            "start_logit": 0.8627617359161377,
+            "end_logit": 1.5766862630844116,
+            "text": "U.S. Food and Drug Administration",
+            "probability": 7.669739716220647e-06
+        },
+        {
+            "start_logit": -4.128119945526123,
+            "end_logit": 6.028872489929199,
+            "text": "Inc",
+            "probability": 4.475359219213715e-06
+        }
+    ],
+    "6415c53e690f196b51000012": [
+        {
+            "start_logit": 5.46632194519043,
+            "end_logit": 6.002884864807129,
+            "text": "October 24, 2016",
+            "probability": 0.7868857383728027
+        },
+        {
+            "start_logit": 4.140552520751953,
+            "end_logit": 6.002884864807129,
+            "text": "2016",
+            "probability": 0.20899567008018494
+        },
+        {
+            "start_logit": -0.0544283501803875,
+            "end_logit": 6.002884864807129,
+            "text": "24, 2016",
+            "probability": 0.0031497797463089228
+        },
+        {
+            "start_logit": 4.140552520751953,
+            "end_logit": -1.692686676979065,
+            "text": "2016,",
+            "probability": 9.505892376182601e-05
+        },
+        {
+            "start_logit": -3.9106807708740234,
+            "end_logit": 6.002884864807129,
+            "text": ", 2016",
+            "probability": 6.660872895736247e-05
+        },
+        {
+            "start_logit": 4.140552520751953,
+            "end_logit": -3.3189549446105957,
+            "text": "2016, the U.S. Food and Drug Administration (Food and Drug Administration) approved pembrolizumab",
+            "probability": 1.8694485333980992e-05
+        },
+        {
+            "start_logit": -0.0544283501803875,
+            "end_logit": -1.692686676979065,
+            "text": "24, 2016,",
+            "probability": 1.4326365089800674e-06
+        },
+        {
+            "start_logit": -0.0544283501803875,
+            "end_logit": -3.1854090690612793,
+            "text": "24",
+            "probability": 3.2199923793996277e-07
+        }
+    ],
+    "6415bc8d690f196b5100000f": [
+        {
+            "start_logit": 6.000010967254639,
+            "end_logit": 5.919124603271484,
+            "text": "8%",
+            "probability": 0.8420612812042236
+        },
+        {
+            "start_logit": 6.000010967254639,
+            "end_logit": 3.7244551181793213,
+            "text": "8% and 10-12%",
+            "probability": 0.09380170702934265
+        },
+        {
+            "start_logit": 1.7885469198226929,
+            "end_logit": 5.919124603271484,
+            "text": "reduced time and costs by online counseling with about 8%",
+            "probability": 0.012483257800340652
+        },
+        {
+            "start_logit": 2.603093385696411,
+            "end_logit": 3.7244551181793213,
+            "text": "12%",
+            "probability": 0.0031401333399116993
+        },
+        {
+            "start_logit": 2.603093385696411,
+            "end_logit": 1.970536708831787,
+            "text": "12%, respectively.",
+            "probability": 0.0005435394705273211
+        }
+    ],
+    "6415bb3c690f196b5100000e": [
+        {
+            "start_logit": 4.409292697906494,
+            "end_logit": 4.18472957611084,
+            "text": "8%",
+            "probability": 0.22545449435710907
+        },
+        {
+            "start_logit": 4.618288040161133,
+            "end_logit": 3.9438323974609375,
+            "text": "10-12%",
+            "probability": 0.21837548911571503
+        },
+        {
+            "start_logit": 2.531414270401001,
+            "end_logit": 3.9438323974609375,
+            "text": "12%",
+            "probability": 0.027094805613160133
+        },
+        {
+            "start_logit": 2.531414270401001,
+            "end_logit": 3.560878038406372,
+            "text": "12%, respectively.",
+            "probability": 0.018474433571100235
+        },
+        {
+            "start_logit": 1.6643584966659546,
+            "end_logit": 4.18472957611084,
+            "text": "reduced time and costs by online counseling with about 8%",
+            "probability": 0.014486015774309635
+        }
+    ],
+    "6415c6b6690f196b51000015": [
+        {
+            "start_logit": -1.393049716949463,
+            "end_logit": 2.4959208965301514,
+            "text": "randomized, open-label, active-controlled trials",
+            "probability": 0.4183400869369507
+        },
+        {
+            "start_logit": -1.1175211668014526,
+            "end_logit": -1.244201421737671,
+            "text": "progression-free survival",
+            "probability": 0.01308806985616684
+        },
+        {
+            "start_logit": -5.171619892120361,
+            "end_logit": 2.4959208965301514,
+            "text": "trials",
+            "probability": 0.009561307728290558
+        },
+        {
+            "start_logit": -2.0458779335021973,
+            "end_logit": -2.138643264770508,
+            "text": "overall survival",
+            "probability": 0.0021146771032363176
+        }
+    ],
+    "6414c4cf690f196b51000006": [
+        {
+            "start_logit": 5.876968860626221,
+            "end_logit": 5.0872721672058105,
+            "text": "skin picking disorder",
+            "probability": 0.4613025188446045
+        },
+        {
+            "start_logit": -1.0921010971069336,
+            "end_logit": 4.25755500793457,
+            "text": "neuropsychiatric disorder with an underestimated prevalence that has a concerning negative impact on an individual's health and quality of life.",
+            "probability": 0.00018924115283880383
+        },
+        {
+            "start_logit": 5.876968860626221,
+            "end_logit": -2.7129805088043213,
+            "text": "skin pick",
+            "probability": 0.0001889639679575339
+        }
+    ],
+    "63eeeaaaf36125a426000004": [
+        {
+            "start_logit": 8.000564575195312,
+            "end_logit": 8.180903434753418,
+            "text": "Recessive dystrophic epidermolysis bullosa",
+            "probability": 0.9998894929885864
+        },
+        {
+            "start_logit": 3.8284683227539062,
+            "end_logit": 3.363231658935547,
+            "text": "herpes simplex virus type 1",
+            "probability": 0.002543147187680006
+        },
+        {
+            "start_logit": 6.478776931762695,
+            "end_logit": -2.8556246757507324,
+            "text": "Recessive dystrophic",
+            "probability": 7.17085858923383e-05
+        },
+        {
+            "start_logit": -3.286574602127075,
+            "end_logit": 6.542618751525879,
+            "text": "epidermolysis bullosa",
+            "probability": 4.967501445207745e-05
+        },
+        {
+            "start_logit": 6.478776931762695,
+            "end_logit": -3.3031668663024902,
+            "text": "Recessive",
+            "probability": 4.5835928176529706e-05
+        },
+        {
+            "start_logit": -2.8143258094787598,
+            "end_logit": 8.180903434753418,
+            "text": "osa",
+            "probability": 2.009574745898135e-05
+        },
+        {
+            "start_logit": 8.000564575195312,
+            "end_logit": -2.9106147289276123,
+            "text": "Recessive",
+            "probability": 1.52393467942602e-05
+        },
+        {
+            "start_logit": -3.285911798477173,
+            "end_logit": 8.180903434753418,
+            "text": "dystrophic epidermolysis bullosa",
+            "probability": 1.2539991985249799e-05
+        },
+        {
+            "start_logit": -3.739835500717163,
+            "end_logit": 8.180903434753418,
+            "text": "bullosa",
+            "probability": 7.96453605289571e-06
+        },
+        {
+            "start_logit": -4.364560127258301,
+            "end_logit": 8.180903434753418,
+            "text": "olysis bullosa",
+            "probability": 4.264284598320955e-06
+        }
+    ],
+    "6410eb95201352f04a00002e": [
+        {
+            "start_logit": 6.186031818389893,
+            "end_logit": 5.66581392288208,
+            "text": "Srrm4",
+            "probability": 0.34455132484436035
+        },
+        {
+            "start_logit": 6.212727069854736,
+            "end_logit": 5.599518299102783,
+            "text": "Nova1",
+            "probability": 0.3311735987663269
+        },
+        {
+            "start_logit": -3.7569124698638916,
+            "end_logit": -4.508844375610352,
+            "text": "Our work suggests that an intricate interplay of programs controlling gene expression",
+            "probability": 0.1418408900499344
+        },
+        {
+            "start_logit": -3.7569124698638916,
+            "end_logit": -5.620253086090088,
+            "text": "Our",
+            "probability": 0.04667910933494568
+        },
+        {
+            "start_logit": 6.212727069854736,
+            "end_logit": -1.0847914218902588,
+            "text": "Nov",
+            "probability": 0.00041409197729080915
+        },
+        {
+            "start_logit": 6.186031818389893,
+            "end_logit": -1.2075037956237793,
+            "text": "Srrm",
+            "probability": 0.0003566235245671123
+        },
+        {
+            "start_logit": 6.186031818389893,
+            "end_logit": -1.3908319473266602,
+            "text": "Sr",
+            "probability": 0.00029688727227039635
+        },
+        {
+            "start_logit": 6.186031818389893,
+            "end_logit": -2.7260775566101074,
+            "text": "Srr",
+            "probability": 7.810912211425602e-05
+        },
+        {
+            "start_logit": -2.79891037940979,
+            "end_logit": 5.599518299102783,
+            "text": "a1",
+            "probability": 4.039719351567328e-05
+        },
+        {
+            "start_logit": -2.9021191596984863,
+            "end_logit": 5.66581392288208,
+            "text": "4",
+            "probability": 3.893320172210224e-05
+        },
+        {
+            "start_logit": -3.149357795715332,
+            "end_logit": 5.66581392288208,
+            "text": "rm4",
+            "probability": 3.0405037250602618e-05
+        },
+        {
+            "start_logit": -3.73478627204895,
+            "end_logit": 5.66581392288208,
+            "text": "m4",
+            "probability": 1.6931571735767648e-05
+        },
+        {
+            "start_logit": 6.212727069854736,
+            "end_logit": -4.842820167541504,
+            "text": "Nova1 as likely upstream regulators of the observed splicing changes in the PLN-R14del cardiomyocytes.",
+            "probability": 9.660631803853903e-06
+        }
+    ],
+    "641368ee201352f04a00003c": [
+        {
+            "start_logit": 5.962204933166504,
+            "end_logit": 6.164054870605469,
+            "text": "glioblastoma",
+            "probability": 0.3275388777256012
+        },
+        {
+            "start_logit": 5.7384467124938965,
+            "end_logit": 6.15527868270874,
+            "text": "astrocytoma",
+            "probability": 0.25958192348480225
+        },
+        {
+            "start_logit": 5.12960958480835,
+            "end_logit": 6.164054870605469,
+            "text": "oligodendroglioma, isocitrate dehydrogenase-mutant and 1p/19q codeleted, and glioblastoma",
+            "probability": 0.14245297014713287
+        },
+        {
+            "start_logit": 5.622282981872559,
+            "end_logit": 5.738651275634766,
+            "text": "high-risk",
+            "probability": 0.13763010501861572
+        },
+        {
+            "start_logit": 5.632927894592285,
+            "end_logit": 5.723671913146973,
+            "text": "intermediate-risk",
+            "probability": 0.1370348334312439
+        },
+        {
+            "start_logit": 5.4197001457214355,
+            "end_logit": 5.4447150230407715,
+            "text": "low-risk",
+            "probability": 0.08376795053482056
+        }
+    ],
+    "64138ce8201352f04a000042": [
+        {
+            "start_logit": 4.448399543762207,
+            "end_logit": 6.253200531005859,
+            "text": "mouse",
+            "probability": 0.9409449696540833
+        },
+        {
+            "start_logit": 4.62334680557251,
+            "end_logit": 5.759577751159668,
+            "text": "alopecia in the mouse. A potential model for a newly described heritable human disorder.",
+            "probability": 0.558329164981842
+        },
+        {
+            "start_logit": 4.62334680557251,
+            "end_logit": 4.502523422241211,
+            "text": "alopecia",
+            "probability": 0.1588393598794937
+        },
+        {
+            "start_logit": 2.8203141689300537,
+            "end_logit": 3.9899919033050537,
+            "text": "progressive renal disease",
+            "probability": 0.015679117292165756
+        },
+        {
+            "start_logit": 2.503960371017456,
+            "end_logit": 3.9899919033050537,
+            "text": "renal disease",
+            "probability": 0.011426965706050396
+        },
+        {
+            "start_logit": -1.5277191400527954,
+            "end_logit": 5.759577751159668,
+            "text": "disorder.",
+            "probability": 0.0011899156961590052
+        },
+        {
+            "start_logit": 1.4246115684509277,
+            "end_logit": 0.8269129395484924,
+            "text": "renal failure",
+            "probability": 0.00020125339506193995
+        }
+    ],
+    "63eefa3bf36125a426000012": [
+        {
+            "start_logit": 6.038163661956787,
+            "end_logit": 6.602503299713135,
+            "text": "Japanese spotted fever",
+            "probability": 0.8541204333305359
+        },
+        {
+            "start_logit": 7.173117637634277,
+            "end_logit": 7.473908424377441,
+            "text": "Rickettsia japonica",
+            "probability": 0.8451545238494873
+        },
+        {
+            "start_logit": 6.771703720092773,
+            "end_logit": 7.003635406494141,
+            "text": "R. japonica",
+            "probability": 0.38079574704170227
+        },
+        {
+            "start_logit": 4.068661212921143,
+            "end_logit": 3.996674060821533,
+            "text": "tick-borne zoonoses that are becoming a significant public health threat in Japan and East Asia.",
+            "probability": 0.00879990216344595
+        },
+        {
+            "start_logit": 1.153058409690857,
+            "end_logit": 6.602503299713135,
+            "text": "spotted fever",
+            "probability": 0.006455723196268082
+        },
+        {
+            "start_logit": 6.879608154296875,
+            "end_logit": -1.2045246362686157,
+            "text": "Japanese",
+            "probability": 0.00011555683886399493
+        },
+        {
+            "start_logit": 7.173117637634277,
+            "end_logit": -1.6787993907928467,
+            "text": "Rickettsia",
+            "probability": 8.952936332207173e-05
+        },
+        {
+            "start_logit": 7.173117637634277,
+            "end_logit": -2.6540050506591797,
+            "text": "Ricketts",
+            "probability": 3.37628553097602e-05
+        }
+    ],
+    "64136fbf201352f04a00003d": [
+        {
+            "start_logit": 5.161233901977539,
+            "end_logit": 5.4109416007995605,
+            "text": "area under the receiver operating characteristic curve",
+            "probability": 0.9409993886947632
+        },
+        {
+            "start_logit": 4.604514122009277,
+            "end_logit": 4.585474014282227,
+            "text": "area under the receiver operator characteristics curve",
+            "probability": 0.7247992157936096
+        }
+    ],
+    "640c85e9201352f04a000026": [
+        {
+            "start_logit": 0.6656512022018433,
+            "end_logit": -0.8523455858230591,
+            "text": "Mantle cell lymphoma",
+            "probability": 0.4411184787750244
+        },
+        {
+            "start_logit": 1.1700284481048584,
+            "end_logit": -1.012916088104248,
+            "text": "Mantle cell",
+            "probability": 0.2773771286010742
+        },
+        {
+            "start_logit": 1.4061577320098877,
+            "end_logit": 0.9788670539855957,
+            "text": "follicular lymphoma",
+            "probability": 0.102333664894104
+        },
+        {
+            "start_logit": 0.9857778549194336,
+            "end_logit": 0.9624540209770203,
+            "text": "diffuse large cell",
+            "probability": 0.06611832231283188
+        },
+        {
+            "start_logit": 0.9857778549194336,
+            "end_logit": 0.6864178776741028,
+            "text": "diffuse large cell lymphoma",
+            "probability": 0.05016961693763733
+        },
+        {
+            "start_logit": 1.028572916984558,
+            "end_logit": 0.6226273775100708,
+            "text": "chronic lymphocytic leukemia",
+            "probability": 0.04912726208567619
+        },
+        {
+            "start_logit": 0.005510434508323669,
+            "end_logit": 0.6864178776741028,
+            "text": "large cell lymphoma",
+            "probability": 0.018824182450771332
+        }
+    ],
+    "63f03a20f36125a42600001c": [
+        {
+            "start_logit": 6.11712121963501,
+            "end_logit": 6.072312831878662,
+            "text": "Tixagevimab",
+            "probability": 0.4081972539424896
+        },
+        {
+            "start_logit": 6.047055244445801,
+            "end_logit": 6.095861434936523,
+            "text": "Tixagevimab",
+            "probability": 0.3768896460533142
+        },
+        {
+            "start_logit": 5.928390979766846,
+            "end_logit": 5.958624839782715,
+            "text": "tixagevimab",
+            "probability": 0.37623193860054016
+        },
+        {
+            "start_logit": 6.03938102722168,
+            "end_logit": 5.912276268005371,
+            "text": "cilgavimab",
+            "probability": 0.36058762669563293
+        },
+        {
+            "start_logit": 5.884122848510742,
+            "end_logit": 5.969825267791748,
+            "text": "tixagevimab",
+            "probability": 0.32702162861824036
+        },
+        {
+            "start_logit": 5.928390979766846,
+            "end_logit": 5.810953140258789,
+            "text": "tixagevimab-cilgavimab",
+            "probability": 0.3245803415775299
+        },
+        {
+            "start_logit": 6.047055244445801,
+            "end_logit": 5.926340103149414,
+            "text": "Tixagevimab-Cilgavimab",
+            "probability": 0.3181207776069641
+        },
+        {
+            "start_logit": 5.884122848510742,
+            "end_logit": 5.912276268005371,
+            "text": "tixagevimab [AZD8895] and cilgavimab",
+            "probability": 0.3087330162525177
+        },
+        {
+            "start_logit": 6.11712121963501,
+            "end_logit": 5.785006046295166,
+            "text": "Tixagevimab-Cilgavimab",
+            "probability": 0.3062628209590912
+        },
+        {
+            "start_logit": 5.998581409454346,
+            "end_logit": 5.926340103149414,
+            "text": "Cilgavimab",
+            "probability": 0.3030678927898407
+        },
+        {
+            "start_logit": 5.84061861038208,
+            "end_logit": 5.810953140258789,
+            "text": "cilgavimab",
+            "probability": 0.2973056435585022
+        },
+        {
+            "start_logit": 6.041817665100098,
+            "end_logit": 5.785006046295166,
+            "text": "Cilgavimab",
+            "probability": 0.28404727578163147
+        },
+        {
+            "start_logit": 0.08330556005239487,
+            "end_logit": 5.969825267791748,
+            "text": "long-acting monoclonal antibodies (tixagevimab",
+            "probability": 0.0009892663219943643
+        },
+        {
+            "start_logit": 5.928390979766846,
+            "end_logit": -1.4271727800369263,
+            "text": "tixagevima",
+            "probability": 0.0002332622098037973
+        },
+        {
+            "start_logit": 5.928390979766846,
+            "end_logit": -1.5334889888763428,
+            "text": "tixagevimab-cilgavima",
+            "probability": 0.0002097354590659961
+        },
+        {
+            "start_logit": 5.928390979766846,
+            "end_logit": -1.5404908657073975,
+            "text": "ti",
+            "probability": 0.0002082720457110554
+        },
+        {
+            "start_logit": 5.884122848510742,
+            "end_logit": -1.4370017051696777,
+            "text": "tixagevima",
+            "probability": 0.0001985327689908445
+        },
+        {
+            "start_logit": 5.84061861038208,
+            "end_logit": -1.5334889888763428,
+            "text": "cilgavima",
+            "probability": 0.00019211125618312508
+        },
+        {
+            "start_logit": 6.11712121963501,
+            "end_logit": -1.6717514991760254,
+            "text": "Tixagevima",
+            "probability": 0.0001768746878951788
+        },
+        {
+            "start_logit": 6.047055244445801,
+            "end_logit": -1.6169753074645996,
+            "text": "Tixagevima",
+            "probability": 0.00016848908853717148
+        },
+        {
+            "start_logit": 6.047055244445801,
+            "end_logit": -1.6274473667144775,
+            "text": "Tixagevimab-Cilgavimab, (Evusheld",
+            "probability": 0.0001667338947299868
+        },
+        {
+            "start_logit": -1.6788222789764404,
+            "end_logit": 6.095861434936523,
+            "text": "b",
+            "probability": 0.00016630608297418803
+        },
+        {
+            "start_logit": 6.03938102722168,
+            "end_logit": -1.8033442497253418,
+            "text": "cilgavima",
+            "probability": 0.0001607531012268737
+        },
+        {
+            "start_logit": 6.03938102722168,
+            "end_logit": -1.809021234512329,
+            "text": "cil",
+            "probability": 0.00015984314086381346
+        },
+        {
+            "start_logit": 5.998581409454346,
+            "end_logit": -1.6274473667144775,
+            "text": "Cilgavimab, (Evusheld",
+            "probability": 0.00015884435561019927
+        },
+        {
+            "start_logit": -1.6788222789764404,
+            "end_logit": 5.926340103149414,
+            "text": "b-Cilgavimab",
+            "probability": 0.00014037376968190074
+        },
+        {
+            "start_logit": 5.884122848510742,
+            "end_logit": -1.8033442497253418,
+            "text": "tixagevimab [AZD8895] and cilgavima",
+            "probability": 0.00013763585593551397
+        },
+        {
+            "start_logit": 6.11712121963501,
+            "end_logit": -1.9300049543380737,
+            "text": "Tixagevimab-Cilgavima",
+            "probability": 0.0001366179494652897
+        },
+        {
+            "start_logit": 6.041817665100098,
+            "end_logit": -1.9300049543380737,
+            "text": "Cilgavima",
+            "probability": 0.0001267078914679587
+        },
+        {
+            "start_logit": -2.06933856010437,
+            "end_logit": 6.072312831878662,
+            "text": "b",
+            "probability": 0.00011364122474333271
+        },
+        {
+            "start_logit": 6.047055244445801,
+            "end_logit": -2.0267746448516846,
+            "text": "Tixagevimab-Cilgavima",
+            "probability": 0.00011184029426658526
+        },
+        {
+            "start_logit": 5.928390979766846,
+            "end_logit": -2.1662685871124268,
+            "text": "tixagevi",
+            "probability": 0.00011139326670672745
+        },
+        {
+            "start_logit": -2.2176239490509033,
+            "end_logit": 5.958624839782715,
+            "text": "b",
+            "probability": 0.00010906520037679002
+        },
+        {
+            "start_logit": 5.998581409454346,
+            "end_logit": -2.0267746448516846,
+            "text": "Cilgavima",
+            "probability": 0.00010654822108335793
+        },
+        {
+            "start_logit": 6.03938102722168,
+            "end_logit": -2.24499249458313,
+            "text": "cilgavi",
+            "probability": 0.0001033603839459829
+        },
+        {
+            "start_logit": 5.884122848510742,
+            "end_logit": -2.134948492050171,
+            "text": "tixage",
+            "probability": 9.879105346044526e-05
+        },
+        {
+            "start_logit": -2.2176239490509033,
+            "end_logit": 5.810953140258789,
+            "text": "b-cilgavimab",
+            "probability": 9.409210906596854e-05
+        },
+        {
+            "start_logit": 5.884122848510742,
+            "end_logit": -2.2302284240722656,
+            "text": "tixagevi",
+            "probability": 8.981278369901702e-05
+        },
+        {
+            "start_logit": 5.884122848510742,
+            "end_logit": -2.24499249458313,
+            "text": "tixagevimab [AZD8895] and cilgavi",
+            "probability": 8.849654841469601e-05
+        },
+        {
+            "start_logit": -2.06933856010437,
+            "end_logit": 5.785006046295166,
+            "text": "b-Cilgavimab",
+            "probability": 8.526290184818208e-05
+        },
+        {
+            "start_logit": 6.11712121963501,
+            "end_logit": -2.426486015319824,
+            "text": "Tixagevi",
+            "probability": 8.315509330714121e-05
+        },
+        {
+            "start_logit": 5.884122848510742,
+            "end_logit": -2.317108154296875,
+            "text": "tixa",
+            "probability": 8.233923290390521e-05
+        },
+        {
+            "start_logit": -2.4290685653686523,
+            "end_logit": 5.969825267791748,
+            "text": "b",
+            "probability": 8.020534733077511e-05
+        },
+        {
+            "start_logit": 5.928390979766846,
+            "end_logit": -2.4977176189422607,
+            "text": "tixagevimab-cilgavimab) for prevention of Covid-19",
+            "probability": 7.996735075721517e-05
+        },
+        {
+            "start_logit": 6.047055244445801,
+            "end_logit": -2.371725559234619,
+            "text": "Tixagevi",
+            "probability": 7.92114733485505e-05
+        },
+        {
+            "start_logit": 6.03938102722168,
+            "end_logit": -2.5356616973876953,
+            "text": "cilgavimab [AZD1061]",
+            "probability": 7.72890416556038e-05
+        },
+        {
+            "start_logit": 6.03938102722168,
+            "end_logit": -2.539175271987915,
+            "text": "cilga",
+            "probability": 7.701798313064501e-05
+        },
+        {
+            "start_logit": -2.4290685653686523,
+            "end_logit": 5.912276268005371,
+            "text": "b [AZD8895] and cilgavimab",
+            "probability": 7.571987225674093e-05
+        },
+        {
+            "start_logit": 5.928390979766846,
+            "end_logit": -2.6299304962158203,
+            "text": "tixagevimab-cilgavi",
+            "probability": 7.006369560258463e-05
+        },
+        {
+            "start_logit": -2.6306381225585938,
+            "end_logit": 6.095861434936523,
+            "text": "xagevimab",
+            "probability": 6.42007144051604e-05
+        },
+        {
+            "start_logit": 5.84061861038208,
+            "end_logit": -2.6299304962158203,
+            "text": "cilgavi",
+            "probability": 6.417620170395821e-05
+        },
+        {
+            "start_logit": -2.8403663635253906,
+            "end_logit": 5.958624839782715,
+            "text": "xagevimab",
+            "probability": 5.8510329836281016e-05
+        },
+        {
+            "start_logit": -2.7545676231384277,
+            "end_logit": 6.072312831878662,
+            "text": "xagevimab",
+            "probability": 5.727229290641844e-05
+        },
+        {
+            "start_logit": 6.047055244445801,
+            "end_logit": -2.72127103805542,
+            "text": "Tixage",
+            "probability": 5.5844713642727584e-05
+        },
+        {
+            "start_logit": -2.6306381225585938,
+            "end_logit": 5.926340103149414,
+            "text": "xagevimab-Cilgavimab",
+            "probability": 5.4189818911254406e-05
+        },
+        {
+            "start_logit": -2.681319236755371,
+            "end_logit": 5.926340103149414,
+            "text": "b",
+            "probability": 5.15118517796509e-05
+        },
+        {
+            "start_logit": -2.8403663635253906,
+            "end_logit": 5.810953140258789,
+            "text": "xagevimab-cilgavimab",
+            "probability": 5.0477698096074164e-05
+        },
+        {
+            "start_logit": -2.8783953189849854,
+            "end_logit": 5.810953140258789,
+            "text": "b",
+            "probability": 4.859413456870243e-05
+        },
+        {
+            "start_logit": 6.11712121963501,
+            "end_logit": -2.970710515975952,
+            "text": "Tixagevimab-Cilgavi",
+            "probability": 4.8254194553010166e-05
+        },
+        {
+            "start_logit": 6.041817665100098,
+            "end_logit": -2.970710515975952,
+            "text": "Cilgavi",
+            "probability": 4.475390596780926e-05
+        },
+        {
+            "start_logit": 6.047055244445801,
+            "end_logit": -2.960786819458008,
+            "text": "Tixa",
+            "probability": 4.395030191517435e-05
+        },
+        {
+            "start_logit": 5.928390979766846,
+            "end_logit": -3.1163477897644043,
+            "text": "tixage",
+            "probability": 4.307694689487107e-05
+        },
+        {
+            "start_logit": -2.7545676231384277,
+            "end_logit": 5.785006046295166,
+            "text": "xagevimab-Cilgavimab",
+            "probability": 4.297034683986567e-05
+        },
+        {
+            "start_logit": 6.047055244445801,
+            "end_logit": -3.079270839691162,
+            "text": "Tixagevimab-Cilgavi",
+            "probability": 3.903953984263353e-05
+        },
+        {
+            "start_logit": 6.11712121963501,
+            "end_logit": -3.2515828609466553,
+            "text": "Tixagevimab-Cilgavimab) Administration and Severe Acute Respiratory Syndrome Coronavirus 2",
+            "probability": 3.6437933886190876e-05
+        }
+    ],
+    "640ddd9d201352f04a000028": [
+        {
+            "start_logit": 6.266470909118652,
+            "end_logit": 6.1942057609558105,
+            "text": "pembrolizumab",
+            "probability": 0.8534634113311768
+        },
+        {
+            "start_logit": 6.157845497131348,
+            "end_logit": 6.044445037841797,
+            "text": "nivolumab",
+            "probability": 0.3303549885749817
+        },
+        {
+            "start_logit": 6.187944412231445,
+            "end_logit": -0.7050780057907104,
+            "text": "niv",
+            "probability": 0.000348515750374645
+        },
+        {
+            "start_logit": 6.266470909118652,
+            "end_logit": -1.7432869672775269,
+            "text": "pem",
+            "probability": 0.00030477248947136104
+        },
+        {
+            "start_logit": 2.609982490539551,
+            "end_logit": 2.4762513637542725,
+            "text": "programmed cell death protein 1",
+            "probability": 0.0002682358317542821
+        },
+        {
+            "start_logit": -1.9942054748535156,
+            "end_logit": 6.1942057609558105,
+            "text": "umab",
+            "probability": 0.00022060691844671965
+        },
+        {
+            "start_logit": 6.187944412231445,
+            "end_logit": -1.9192135334014893,
+            "text": "nivolum",
+            "probability": 0.00010349757212679833
+        },
+        {
+            "start_logit": -2.355670928955078,
+            "end_logit": 6.044445037841797,
+            "text": "ab",
+            "probability": 6.631437281612307e-05
+        },
+        {
+            "start_logit": 6.157845497131348,
+            "end_logit": -2.511930465698242,
+            "text": "nivolum",
+            "probability": 6.353224307531491e-05
+        },
+        {
+            "start_logit": -3.252500057220459,
+            "end_logit": 6.1942057609558105,
+            "text": "brolizumab",
+            "probability": 6.268281867960468e-05
+        },
+        {
+            "start_logit": 6.10958194732666,
+            "end_logit": -2.408348321914673,
+            "text": "pembroliz",
+            "probability": 5.867718209628947e-05
+        },
+        {
+            "start_logit": -2.554208755493164,
+            "end_logit": 6.211109161376953,
+            "text": "umab",
+            "probability": 5.613263783743605e-05
+        },
+        {
+            "start_logit": -2.5900747776031494,
+            "end_logit": 6.06624698638916,
+            "text": "umab",
+            "probability": 5.3613715863320976e-05
+        },
+        {
+            "start_logit": -2.5555121898651123,
+            "end_logit": 6.114394187927246,
+            "text": "ab",
+            "probability": 5.0891645514639094e-05
+        },
+        {
+            "start_logit": 0.263717383146286,
+            "end_logit": 2.43772029876709,
+            "text": "programmed death 1",
+            "probability": 4.929485294269398e-05
+        },
+        {
+            "start_logit": -2.712131977081299,
+            "end_logit": 5.961385250091553,
+            "text": "ab",
+            "probability": 4.460565833142027e-05
+        },
+        {
+            "start_logit": 6.072588920593262,
+            "end_logit": -2.781252861022949,
+            "text": "pembroliz",
+            "probability": 4.456588430912234e-05
+        },
+        {
+            "start_logit": -2.8566770553588867,
+            "end_logit": 6.0315351486206055,
+            "text": "umab",
+            "probability": 4.140764576732181e-05
+        },
+        {
+            "start_logit": 6.181772232055664,
+            "end_logit": -3.0453405380249023,
+            "text": "Nivolum",
+            "probability": 3.984668364864774e-05
+        },
+        {
+            "start_logit": -2.8870272636413574,
+            "end_logit": 6.044445037841797,
+            "text": "olumab",
+            "probability": 3.8980040699243546e-05
+        },
+        {
+            "start_logit": -2.9578731060028076,
+            "end_logit": 5.961385250091553,
+            "text": "olumab",
+            "probability": 3.4887194487964734e-05
+        },
+        {
+            "start_logit": 6.10720157623291,
+            "end_logit": -3.115265369415283,
+            "text": "Pembroliz",
+            "probability": 3.4485678042983636e-05
+        },
+        {
+            "start_logit": 6.266470909118652,
+            "end_logit": -3.926792621612549,
+            "text": "pembroliz",
+            "probability": 3.433137317188084e-05
+        },
+        {
+            "start_logit": -3.8601090908050537,
+            "end_logit": 6.1942057609558105,
+            "text": "olizumab",
+            "probability": 3.4140306524932384e-05
+        },
+        {
+            "start_logit": -3.09739351272583,
+            "end_logit": 6.114394187927246,
+            "text": "olumab",
+            "probability": 2.960126948892139e-05
+        },
+        {
+            "start_logit": -4.267867565155029,
+            "end_logit": 6.1942057609558105,
+            "text": "zumab",
+            "probability": 2.2708059987053275e-05
+        },
+        {
+            "start_logit": 6.266470909118652,
+            "end_logit": -4.4718499183654785,
+            "text": "pembr",
+            "probability": 1.9905621229554527e-05
+        },
+        {
+            "start_logit": -3.6134636402130127,
+            "end_logit": 6.0315351486206055,
+            "text": "brolizumab",
+            "probability": 1.94272961380193e-05
+        },
+        {
+            "start_logit": 4.241604804992676,
+            "end_logit": -2.5210723876953125,
+            "text": "nivolum",
+            "probability": 1.848415740823839e-05
+        }
+    ],
+    "640f857d201352f04a00002b": [
+        {
+            "start_logit": 5.496005535125732,
+            "end_logit": 6.435942649841309,
+            "text": "Systematic Reviews of Prediction Modeling Studies",
+            "probability": 0.8655417561531067
+        },
+        {
+            "start_logit": 4.52725887298584,
+            "end_logit": 2.815840005874634,
+            "text": "Checklist for\u00a0Critical Appraisal and Data Extraction for Systematic Reviews",
+            "probability": 0.1508910357952118
+        }
+    ],
+    "6402bc2d201352f04a000005": [
+        {
+            "start_logit": 6.17222785949707,
+            "end_logit": 6.428349018096924,
+            "text": "CD20",
+            "probability": 0.8701849579811096
+        },
+        {
+            "start_logit": 6.117585182189941,
+            "end_logit": 6.177835464477539,
+            "text": "CD3",
+            "probability": 0.32078325748443604
+        },
+        {
+            "start_logit": 6.17222785949707,
+            "end_logit": 4.400623321533203,
+            "text": "CD20 on B cells and engage T cells via CD3",
+            "probability": 0.11454645544290543
+        },
+        {
+            "start_logit": -3.836740493774414,
+            "end_logit": 6.20401668548584,
+            "text": "\u00d7\u2009CD3",
+            "probability": 1.2530542335298378e-05
+        }
+    ],
+    "6414c0f7690f196b51000001": [
+        {
+            "start_logit": 5.744806289672852,
+            "end_logit": 5.085907936096191,
+            "text": "hyperammonemia",
+            "probability": 0.9990119934082031
+        },
+        {
+            "start_logit": 5.376955986022949,
+            "end_logit": 5.470512866973877,
+            "text": "hyperammonaemic encephalopathy",
+            "probability": 0.757785439491272
+        },
+        {
+            "start_logit": 4.182586193084717,
+            "end_logit": 4.426695823669434,
+            "text": "moderate symptoms",
+            "probability": 0.18213199079036713
+        },
+        {
+            "start_logit": 5.8759846687316895,
+            "end_logit": 6.122873306274414,
+            "text": "seizures",
+            "probability": 0.11276453733444214
+        },
+        {
+            "start_logit": 5.719684600830078,
+            "end_logit": 5.563949108123779,
+            "text": "ataxia (77 percent), Stage II coma (46 percent), delayed physical growth (38 percent), developmental delay",
+            "probability": 0.05515120550990105
+        },
+        {
+            "start_logit": 5.563045024871826,
+            "end_logit": 5.690432548522949,
+            "text": "lethargy",
+            "probability": 0.053512830287218094
+        },
+        {
+            "start_logit": 3.8016443252563477,
+            "end_logit": 4.008049964904785,
+            "text": "asymptomatic carrier state",
+            "probability": 0.036329321563243866
+        },
+        {
+            "start_logit": -1.4113898277282715,
+            "end_logit": 5.470512866973877,
+            "text": "encephalopathy",
+            "probability": 0.0008538958500139415
+        },
+        {
+            "start_logit": 2.170856475830078,
+            "end_logit": 1.5254976749420166,
+            "text": "severe neonatal presentation",
+            "probability": 0.0005940955015830696
+        },
+        {
+            "start_logit": -2.63706636428833,
+            "end_logit": 5.085907936096191,
+            "text": "ammonemia",
+            "probability": 0.00022875463764648885
+        },
+        {
+            "start_logit": 5.744806289672852,
+            "end_logit": -3.8408358097076416,
+            "text": "hyper",
+            "probability": 0.00013265854795463383
+        },
+        {
+            "start_logit": 5.744806289672852,
+            "end_logit": -4.458186626434326,
+            "text": "hyperammon",
+            "probability": 7.155225466703996e-05
+        },
+        {
+            "start_logit": -4.173336505889893,
+            "end_logit": 5.085907936096191,
+            "text": "emia",
+            "probability": 4.922392690787092e-05
+        },
+        {
+            "start_logit": -2.365220069885254,
+            "end_logit": -4.458186626434326,
+            "text": "results in hyperammon",
+            "probability": 2.150221334318303e-08
+        },
+        {
+            "start_logit": -2.63706636428833,
+            "end_logit": -4.458186626434326,
+            "text": "ammon",
+            "probability": 1.6384063883378985e-08
+        },
+        {
+            "start_logit": -3.548248052597046,
+            "end_logit": -4.4438276290893555,
+            "text": "Deficiency of ornithine transcarbamylase",
+            "probability": 6.682467468266395e-09
+        }
+    ],
+    "640c8309201352f04a000024": [
+        {
+            "start_logit": 5.75044584274292,
+            "end_logit": 5.764750003814697,
+            "text": "alkaline phosphatase",
+            "probability": 0.9916989803314209
+        },
+        {
+            "start_logit": 5.667439937591553,
+            "end_logit": 5.710235595703125,
+            "text": "conjugated bilirubin",
+            "probability": 0.3947906494140625
+        },
+        {
+            "start_logit": 5.653753280639648,
+            "end_logit": 5.6543755531311035,
+            "text": "alanine aminotransferase",
+            "probability": 0.08534795790910721
+        },
+        {
+            "start_logit": 5.812747001647949,
+            "end_logit": 5.254644393920898,
+            "text": "gamma-glutamyl transpeptidase",
+            "probability": 0.06708762049674988
+        },
+        {
+            "start_logit": 5.463387489318848,
+            "end_logit": 5.563660144805908,
+            "text": "aspartate aminotransferase",
+            "probability": 0.0644349530339241
+        },
+        {
+            "start_logit": 3.8139429092407227,
+            "end_logit": 5.399420738220215,
+            "text": "liver transaminases",
+            "probability": 0.04380881413817406
+        },
+        {
+            "start_logit": -0.16819027066230774,
+            "end_logit": 5.710235595703125,
+            "text": "bilirubin",
+            "probability": 0.0011534122750163078
+        },
+        {
+            "start_logit": -1.8299994468688965,
+            "end_logit": 5.764750003814697,
+            "text": "phosphatase",
+            "probability": 0.0005060976254753768
+        },
+        {
+            "start_logit": 1.875529408454895,
+            "end_logit": 1.9964525699615479,
+            "text": "hepatitis",
+            "probability": 0.0004753070534206927
+        },
+        {
+            "start_logit": -2.00441312789917,
+            "end_logit": 5.764750003814697,
+            "text": "level of alkaline phosphatase",
+            "probability": 0.0004250963684171438
+        },
+        {
+            "start_logit": 5.624256134033203,
+            "end_logit": -1.3861112594604492,
+            "text": "alkaline",
+            "probability": 0.0003131178964395076
+        },
+        {
+            "start_logit": 5.6317901611328125,
+            "end_logit": -1.6182641983032227,
+            "text": "conjugated",
+            "probability": 0.00024171338009182364
+        },
+        {
+            "start_logit": -1.5251550674438477,
+            "end_logit": 5.399420738220215,
+            "text": "elevated liver transaminases",
+            "probability": 0.00021029097842983902
+        },
+        {
+            "start_logit": -0.5977873206138611,
+            "end_logit": 1.743302583694458,
+            "text": "withjaundice",
+            "probability": 3.110891339019872e-05
+        },
+        {
+            "start_logit": 0.4508466422557831,
+            "end_logit": 0.6072777509689331,
+            "text": "bile acid retention",
+            "probability": 2.8505684895208105e-05
+        },
+        {
+            "start_logit": -1.0166795253753662,
+            "end_logit": 1.743302583694458,
+            "text": "jaundice",
+            "probability": 2.0462675820454024e-05
+        }
+    ],
+    "6417949d690f196b51000035": [
+        {
+            "start_logit": 5.276709079742432,
+            "end_logit": 5.187886714935303,
+            "text": "CRISPR/Cas9",
+            "probability": 0.9972472786903381
+        },
+        {
+            "start_logit": -2.6996679306030273,
+            "end_logit": 0.060693398118019104,
+            "text": "gene therapies",
+            "probability": 0.38279539346694946
+        },
+        {
+            "start_logit": 5.470393180847168,
+            "end_logit": 5.644370079040527,
+            "text": "gene replacement",
+            "probability": 0.2531789541244507
+        },
+        {
+            "start_logit": 5.068381309509277,
+            "end_logit": 5.526034832000732,
+            "text": "exon skipping",
+            "probability": 0.15046779811382294
+        },
+        {
+            "start_logit": 2.4017581939697266,
+            "end_logit": 2.9485692977905273,
+            "text": "antisense oligonucleotide-mediated pre-mRNA splicing modulation",
+            "probability": 0.13727262616157532
+        },
+        {
+            "start_logit": 5.318006992340088,
+            "end_logit": 5.095636367797852,
+            "text": "suppression of stop codons",
+            "probability": 0.1255841702222824
+        },
+        {
+            "start_logit": 2.7694106101989746,
+            "end_logit": 1.8639755249023438,
+            "text": "Adeno-associated virus",
+            "probability": 0.06702245026826859
+        },
+        {
+            "start_logit": -5.278951644897461,
+            "end_logit": 0.060693398118019104,
+            "text": "therapies",
+            "probability": 0.029026715084910393
+        },
+        {
+            "start_logit": -3.666534900665283,
+            "end_logit": -2.705080509185791,
+            "text": "clinical trials",
+            "probability": 0.009160122834146023
+        },
+        {
+            "start_logit": -3.4025583267211914,
+            "end_logit": -3.2354660034179688,
+            "text": "muscle regeneration",
+            "probability": 0.007017806638032198
+        },
+        {
+            "start_logit": -2.582453966140747,
+            "end_logit": 5.187886714935303,
+            "text": "Cas9",
+            "probability": 0.00038513378240168095
+        },
+        {
+            "start_logit": -1.9855598211288452,
+            "end_logit": 5.644370079040527,
+            "text": "replacement",
+            "probability": 0.00014633503451477736
+        },
+        {
+            "start_logit": 5.470393180847168,
+            "end_logit": -2.05942702293396,
+            "text": "gene",
+            "probability": 0.00011421178351156414
+        },
+        {
+            "start_logit": -5.07528018951416,
+            "end_logit": 5.187886714935303,
+            "text": "/Cas9",
+            "probability": 3.184130400768481e-05
+        }
+    ],
+    "64136664201352f04a00003b": [
+        {
+            "start_logit": 5.105531215667725,
+            "end_logit": 5.615609169006348,
+            "text": "Neuropathic pain",
+            "probability": 0.3955945670604706
+        },
+        {
+            "start_logit": 2.15130352973938,
+            "end_logit": 2.0424904823303223,
+            "text": "autoantibodies",
+            "probability": 0.3449081480503082
+        },
+        {
+            "start_logit": 5.516686916351318,
+            "end_logit": 5.7612128257751465,
+            "text": "pain",
+            "probability": 0.27283716201782227
+        },
+        {
+            "start_logit": 5.087518692016602,
+            "end_logit": 5.039525508880615,
+            "text": "Restless legs syndrome",
+            "probability": 0.21839264035224915
+        },
+        {
+            "start_logit": 2.7704319953918457,
+            "end_logit": 2.7436575889587402,
+            "text": "antibodies to Trisulfated Heparin Disaccharide",
+            "probability": 0.1787026822566986
+        },
+        {
+            "start_logit": 5.21738338470459,
+            "end_logit": 5.36576509475708,
+            "text": "sensory disturbances",
+            "probability": 0.13620001077651978
+        },
+        {
+            "start_logit": 5.084378242492676,
+            "end_logit": 5.2848219871521,
+            "text": "autonomic dysfunction",
+            "probability": 0.10996642708778381
+        },
+        {
+            "start_logit": 2.1176133155822754,
+            "end_logit": 2.3831310272216797,
+            "text": "fibroblast growth factor receptor 3",
+            "probability": 0.06486953794956207
+        },
+        {
+            "start_logit": 1.2068414688110352,
+            "end_logit": 0.9186747670173645,
+            "text": "mall fiber neuropathy",
+            "probability": 0.0435975156724453
+        },
+        {
+            "start_logit": 0.6498509049415588,
+            "end_logit": 0.6696276664733887,
+            "text": "those of IgM class",
+            "probability": 0.019471706822514534
+        },
+        {
+            "start_logit": 5.21738338470459,
+            "end_logit": -1.7057697772979736,
+            "text": "sensory",
+            "probability": 0.00011562411236809567
+        },
+        {
+            "start_logit": 5.084378242492676,
+            "end_logit": -1.962839126586914,
+            "text": "autonomic",
+            "probability": 7.82782444730401e-05
+        }
+    ],
+    "63f9cd0b33942b094c000010": [
+        {
+            "start_logit": 4.486715316772461,
+            "end_logit": 5.785130500793457,
+            "text": "splicing factors",
+            "probability": 0.7313663959503174
+        },
+        {
+            "start_logit": 3.5652949810028076,
+            "end_logit": 4.935576915740967,
+            "text": "Alternative splicing of HSPA12A pre-RNA by SRSF11 contributes to metastasis potential of colorectal cancer.",
+            "probability": 0.6576072573661804
+        },
+        {
+            "start_logit": 2.2429919242858887,
+            "end_logit": 6.4451518058776855,
+            "text": "metastasis in colorectal cancer.",
+            "probability": 0.1759481579065323
+        },
+        {
+            "start_logit": -1.3433729410171509,
+            "end_logit": 3.868865489959717,
+            "text": "regulation of microexon splicing.",
+            "probability": 0.02071320079267025
+        },
+        {
+            "start_logit": -1.4001169204711914,
+            "end_logit": 3.868865489959717,
+            "text": "metastasis through the regulation of microexon splicing.",
+            "probability": 0.019570576027035713
+        },
+        {
+            "start_logit": -1.7238686084747314,
+            "end_logit": 3.868865489959717,
+            "text": "microexon splicing.",
+            "probability": 0.01415793877094984
+        },
+        {
+            "start_logit": -2.320859670639038,
+            "end_logit": 6.4451518058776855,
+            "text": ".",
+            "probability": 0.0018337040673941374
+        },
+        {
+            "start_logit": -3.752983808517456,
+            "end_logit": 4.935576915740967,
+            "text": ".",
+            "probability": 0.0004361929895821959
+        },
+        {
+            "start_logit": -3.8222298622131348,
+            "end_logit": 6.4451518058776855,
+            "text": "cancer.",
+            "probability": 0.00040859440923668444
+        },
+        {
+            "start_logit": 3.0567593574523926,
+            "end_logit": -0.6834865212440491,
+            "text": "associated with",
+            "probability": 0.00031832532840780914
+        }
+    ],
+    "63eef3ebf36125a42600000a": [
+        {
+            "start_logit": 6.677212715148926,
+            "end_logit": 7.104798793792725,
+            "text": "BDCA2",
+            "probability": 0.9995563626289368
+        },
+        {
+            "start_logit": -1.768131136894226,
+            "end_logit": 6.991220474243164,
+            "text": "2",
+            "probability": 0.00042962163570337
+        },
+        {
+            "start_logit": 5.970189094543457,
+            "end_logit": -1.702376365661621,
+            "text": "BDCA",
+            "probability": 0.00013582248357124627
+        },
+        {
+            "start_logit": 5.843228816986084,
+            "end_logit": -1.7937111854553223,
+            "text": "BDCA",
+            "probability": 0.00013286496687214822
+        },
+        {
+            "start_logit": 5.843228816986084,
+            "end_logit": -1.986484408378601,
+            "text": "BD",
+            "probability": 0.0001095696643460542
+        },
+        {
+            "start_logit": 6.677212715148926,
+            "end_logit": -2.2007193565368652,
+            "text": "BDCA",
+            "probability": 9.088087972486392e-05
+        },
+        {
+            "start_logit": 6.814354419708252,
+            "end_logit": -2.211264133453369,
+            "text": "BDCA",
+            "probability": 8.66193586261943e-05
+        },
+        {
+            "start_logit": -2.9720094203948975,
+            "end_logit": 7.104798793792725,
+            "text": "CA2",
+            "probability": 6.444714381359518e-05
+        },
+        {
+            "start_logit": 4.0827412605285645,
+            "end_logit": -1.702376365661621,
+            "text": "Anti-BDCA",
+            "probability": 2.0571393179125153e-05
+        },
+        {
+            "start_logit": 3.94917368888855,
+            "end_logit": -1.7937111854553223,
+            "text": "Anti-BDCA",
+            "probability": 1.99909172806656e-05
+        },
+        {
+            "start_logit": 3.94917368888855,
+            "end_logit": -2.3987741470336914,
+            "text": "Anti",
+            "probability": 1.0915846360148862e-05
+        },
+        {
+            "start_logit": 4.0827412605285645,
+            "end_logit": -2.4397153854370117,
+            "text": "Anti",
+            "probability": 9.841050086834002e-06
+        }
+    ],
+    "64041701201352f04a000017": [
+        {
+            "start_logit": 4.857207298278809,
+            "end_logit": 5.27227783203125,
+            "text": "bilateral cryptorchidism",
+            "probability": 0.24342495203018188
+        },
+        {
+            "start_logit": 4.8178205490112305,
+            "end_logit": 5.276878356933594,
+            "text": "deficiency or absence of abdominal wall muscles",
+            "probability": 0.23510271310806274
+        },
+        {
+            "start_logit": 5.5530595779418945,
+            "end_logit": 5.408151626586914,
+            "text": "cryptorchidism",
+            "probability": 0.2336869239807129
+        },
+        {
+            "start_logit": 5.721937656402588,
+            "end_logit": 5.489774703979492,
+            "text": "absent or defective abdominal wall muscles",
+            "probability": 0.17160698771476746
+        },
+        {
+            "start_logit": 5.497099876403809,
+            "end_logit": 5.145064353942871,
+            "text": "malformations of the urinary tract",
+            "probability": 0.1080760806798935
+        },
+        {
+            "start_logit": 4.822161674499512,
+            "end_logit": 5.246583938598633,
+            "text": "absence or hypoplasia of the abdominal wall musculature, urinary tract anomalies",
+            "probability": 0.0957285687327385
+        },
+        {
+            "start_logit": 5.113894462585449,
+            "end_logit": 4.9961442947387695,
+            "text": "urinary tract abnormalities",
+            "probability": 0.057027511298656464
+        },
+        {
+            "start_logit": 3.396022319793701,
+            "end_logit": 3.995537519454956,
+            "text": "urological abnormalities",
+            "probability": 0.01575067639350891
+        },
+        {
+            "start_logit": 5.5530595779418945,
+            "end_logit": 2.6965599060058594,
+            "text": "cryptorchidism in males",
+            "probability": 0.015524053014814854
+        },
+        {
+            "start_logit": 4.798432350158691,
+            "end_logit": -0.16923511028289795,
+            "text": "hypoplasia",
+            "probability": 0.0004156000795774162
+        },
+        {
+            "start_logit": 5.498800754547119,
+            "end_logit": -1.9533026218414307,
+            "text": "bilateral",
+            "probability": 8.947188325691968e-05
+        },
+        {
+            "start_logit": 5.113894462585449,
+            "end_logit": -1.8976590633392334,
+            "text": "urinary tract",
+            "probability": 5.782871812698431e-05
+        }
+    ],
+    "63f56f7533942b094c000002": [
+        {
+            "start_logit": 7.614079475402832,
+            "end_logit": 8.253984451293945,
+            "text": "aspartoacylase gene",
+            "probability": 0.9998365640640259
+        },
+        {
+            "start_logit": 4.9772796630859375,
+            "end_logit": 3.142502784729004,
+            "text": "aspartoacylase",
+            "probability": 0.726077139377594
+        },
+        {
+            "start_logit": 4.9772796630859375,
+            "end_logit": -4.0901103019714355,
+            "text": "aspart",
+            "probability": 0.0005246851942501962
+        },
+        {
+            "start_logit": 6.62863826751709,
+            "end_logit": -4.526820182800293,
+            "text": "aspartoac",
+            "probability": 1.024151970341336e-05
+        },
+        {
+            "start_logit": 7.285541534423828,
+            "end_logit": -5.277292251586914,
+            "text": "aspartoac",
+            "probability": 2.1677524273400195e-06
+        },
+        {
+            "start_logit": 7.614079475402832,
+            "end_logit": -4.965441703796387,
+            "text": "aspartoac",
+            "probability": 1.8147014770875103e-06
+        },
+        {
+            "start_logit": 7.258757591247559,
+            "end_logit": -5.5860676765441895,
+            "text": "aspartoac",
+            "probability": 1.3453121709972038e-06
+        }
+    ],
+    "63eeeb70f36125a426000005": [
+        {
+            "start_logit": 6.207921028137207,
+            "end_logit": 6.470363616943359,
+            "text": "DLBCL",
+            "probability": 0.9999263286590576
+        },
+        {
+            "start_logit": 5.59481954574585,
+            "end_logit": 6.8614020347595215,
+            "text": "B-cell non-Hodgkin lymphoma",
+            "probability": 0.9969192743301392
+        },
+        {
+            "start_logit": -0.37903326749801636,
+            "end_logit": 6.8614020347595215,
+            "text": "non-Hodgkin lymphoma",
+            "probability": 0.0025365811306983232
+        },
+        {
+            "start_logit": -3.2061893939971924,
+            "end_logit": 6.8614020347595215,
+            "text": "lymphoma",
+            "probability": 0.00015011713549029082
+        },
+        {
+            "start_logit": -3.2949323654174805,
+            "end_logit": 6.8614020347595215,
+            "text": "Hodgkin lymphoma",
+            "probability": 0.00013736939581576735
+        },
+        {
+            "start_logit": -5.988204002380371,
+            "end_logit": 6.8614020347595215,
+            "text": "NP30179, a first-in-human, phase 1 trial in relapsed/refractory B-cell non-Hodgkin lymphoma",
+            "probability": 9.294306437368505e-06
+        },
+        {
+            "start_logit": 5.59481954574585,
+            "end_logit": -5.312255859375,
+            "text": "B",
+            "probability": 5.14881548951962e-06
+        },
+        {
+            "start_logit": 5.59481954574585,
+            "end_logit": -5.464817047119141,
+            "text": "B-cell",
+            "probability": 4.4202911340107676e-06
+        },
+        {
+            "start_logit": -3.1042025089263916,
+            "end_logit": -3.0069820880889893,
+            "text": "CD19",
+            "probability": 1.1737101601738686e-07
+        },
+        {
+            "start_logit": -3.265850305557251,
+            "end_logit": -4.179816246032715,
+            "text": "CD20",
+            "probability": 2.2666262200488063e-09
+        },
+        {
+            "start_logit": -3.265850305557251,
+            "end_logit": -4.413658142089844,
+            "text": "CD20xCD3",
+            "probability": 1.7940033902874575e-09
+        },
+        {
+            "start_logit": -4.757460117340088,
+            "end_logit": -5.0569963455200195,
+            "text": "CD20xCD3",
+            "probability": 1.7040990840655468e-10
+        },
+        {
+            "start_logit": -4.99553918838501,
+            "end_logit": -5.0569963455200195,
+            "text": "bispecific CD20xCD3",
+            "probability": 1.3430694056904002e-10
+        },
+        {
+            "start_logit": -4.757460117340088,
+            "end_logit": -5.805438041687012,
+            "text": "CD20xCD3 antibody glofitamab in patients who progressed after CAR T treatment.",
+            "probability": 8.062132905717334e-11
+        },
+        {
+            "start_logit": -5.7157883644104,
+            "end_logit": -5.0569963455200195,
+            "text": "monotherapy with the bispecific CD20xCD3",
+            "probability": 6.535792046458155e-11
+        },
+        {
+            "start_logit": -4.99553918838501,
+            "end_logit": -5.7797088623046875,
+            "text": "bispecific",
+            "probability": 6.519705608720727e-11
+        }
+    ],
+    "64162fb0690f196b5100001a": [
+        {
+            "start_logit": 4.987849235534668,
+            "end_logit": 5.550633907318115,
+            "text": "gene duplication",
+            "probability": 0.5039980411529541
+        },
+        {
+            "start_logit": 4.786516189575195,
+            "end_logit": 5.626033782958984,
+            "text": "deletion mutant",
+            "probability": 0.4443621039390564
+        },
+        {
+            "start_logit": 4.7170634269714355,
+            "end_logit": 4.731369972229004,
+            "text": "gene deletion",
+            "probability": 0.4253390431404114
+        },
+        {
+            "start_logit": 5.861641883850098,
+            "end_logit": 5.793781757354736,
+            "text": "deletions, 18% duplications and 18% point mutations",
+            "probability": 0.21669837832450867
+        },
+        {
+            "start_logit": 4.235306262969971,
+            "end_logit": 4.522837162017822,
+            "text": "duplication",
+            "probability": 0.213278129696846
+        },
+        {
+            "start_logit": 4.884423732757568,
+            "end_logit": 4.0573954582214355,
+            "text": "nonsense/frameshift",
+            "probability": 0.0451597236096859
+        },
+        {
+            "start_logit": 2.762730360031128,
+            "end_logit": 4.79147481918335,
+            "text": "unknown mutations",
+            "probability": 0.004196562338620424
+        },
+        {
+            "start_logit": 1.7478492259979248,
+            "end_logit": 3.7774808406829834,
+            "text": "Mutations in splice sites",
+            "probability": 0.0014824803220108151
+        },
+        {
+            "start_logit": 1.2221624851226807,
+            "end_logit": 4.19032096862793,
+            "text": "deletion/duplication complex rearrangement",
+            "probability": 0.001324281096458435
+        },
+        {
+            "start_logit": 1.1792144775390625,
+            "end_logit": 3.7774808406829834,
+            "text": "splice sites",
+            "probability": 0.0008395257755182683
+        },
+        {
+            "start_logit": 4.7170634269714355,
+            "end_logit": -2.0382018089294434,
+            "text": "gene",
+            "probability": 0.0004883686196990311
+        },
+        {
+            "start_logit": 4.629967212677002,
+            "end_logit": -1.7389695644378662,
+            "text": "point",
+            "probability": 3.3846496080514044e-05
+        }
+    ],
+    "63f03ae6f36125a42600001d": [
+        {
+            "start_logit": 8.249184608459473,
+            "end_logit": 8.498939514160156,
+            "text": "PDE4B",
+            "probability": 0.9997296929359436
+        },
+        {
+            "start_logit": 7.514492511749268,
+            "end_logit": 8.208996772766113,
+            "text": "phosphodiesterase 4",
+            "probability": 0.9992964267730713
+        },
+        {
+            "start_logit": -0.1711556613445282,
+            "end_logit": 8.208996772766113,
+            "text": "4",
+            "probability": 0.0004590494208969176
+        },
+        {
+            "start_logit": 7.647676467895508,
+            "end_logit": -0.9497603178024292,
+            "text": "phosphodiesterase",
+            "probability": 0.0002548207121435553
+        },
+        {
+            "start_logit": 6.420699119567871,
+            "end_logit": -2.2922487258911133,
+            "text": "PDE",
+            "probability": 0.00022802718740422279
+        },
+        {
+            "start_logit": -0.26161494851112366,
+            "end_logit": 8.498939514160156,
+            "text": "4B",
+            "probability": 0.00020122862770222127
+        },
+        {
+            "start_logit": 8.164572715759277,
+            "end_logit": -2.185147285461426,
+            "text": "PDE",
+            "probability": 6.22836741968058e-05
+        },
+        {
+            "start_logit": 8.249184608459473,
+            "end_logit": -2.1884355545043945,
+            "text": "PDE",
+            "probability": 2.282521927554626e-05
+        },
+        {
+            "start_logit": 7.514492511749268,
+            "end_logit": -4.601258277893066,
+            "text": "phosphodiesterase 4 inhibitor showing a preferential",
+            "probability": 2.7306828087603208e-06
+        },
+        {
+            "start_logit": -1.2393715381622314,
+            "end_logit": -2.2922487258911133,
+            "text": "the PDE",
+            "probability": 1.0746324363708482e-07
+        },
+        {
+            "start_logit": -4.7811126708984375,
+            "end_logit": 0.6991505026817322,
+            "text": ".",
+            "probability": 2.659312103858724e-09
+        },
+        {
+            "start_logit": -2.4845237731933594,
+            "end_logit": -2.185147285461426,
+            "text": "BI 1015550 is a PDE",
+            "probability": 1.4775097811892124e-09
+        },
+        {
+            "start_logit": -5.966744422912598,
+            "end_logit": 0.6991505026817322,
+            "text": "a Clinical Drug Candidate for the Oral Treatment of Idiopathic Pulmonary Fibrosis.",
+            "probability": 8.125602968256374e-10
+        }
+    ],
+    "63eef60ef36125a42600000c": [
+        {
+            "start_logit": 6.788809299468994,
+            "end_logit": 7.542241096496582,
+            "text": "Rheumatoid Arthritis",
+            "probability": 0.9999097585678101
+        },
+        {
+            "start_logit": -2.5399444103240967,
+            "end_logit": 7.874371528625488,
+            "text": "arthritis",
+            "probability": 0.0003242596285417676
+        },
+        {
+            "start_logit": 7.226531028747559,
+            "end_logit": -3.5074477195739746,
+            "text": "rheumatoid",
+            "probability": 1.0699596714403015e-05
+        },
+        {
+            "start_logit": 7.357844352722168,
+            "end_logit": -3.5641982555389404,
+            "text": "rheumatoid",
+            "probability": 9.702998795546591e-06
+        },
+        {
+            "start_logit": 6.9886908531188965,
+            "end_logit": -4.004924297332764,
+            "text": "rheumatoid",
+            "probability": 6.844749805168249e-06
+        },
+        {
+            "start_logit": 6.788809299468994,
+            "end_logit": -4.4245500564575195,
+            "text": "Rheumatoid",
+            "probability": 6.3511070038657635e-06
+        },
+        {
+            "start_logit": 7.3989973068237305,
+            "end_logit": -3.808407783508301,
+            "text": "rheumatoid",
+            "probability": 5.4445354180643335e-06
+        },
+        {
+            "start_logit": 5.492736339569092,
+            "end_logit": -5.939411163330078,
+            "text": "rheumatoid",
+            "probability": 1.000443376142357e-06
+        },
+        {
+            "start_logit": -4.807462215423584,
+            "end_logit": -4.4245500564575195,
+            "text": "in Rheumatoid",
+            "probability": 5.843226597024298e-11
+        },
+        {
+            "start_logit": -5.328896999359131,
+            "end_logit": -4.4245500564575195,
+            "text": "Olokizumab versus Placebo or Adalimumab in Rheumatoid",
+            "probability": 3.4689376371410674e-11
+        }
+    ],
+    "6414638c201352f04a000047": [
+        {
+            "start_logit": 6.404759407043457,
+            "end_logit": 6.679690361022949,
+            "text": "Thalidomide",
+            "probability": 0.9998619556427002
+        },
+        {
+            "start_logit": 7.031940937042236,
+            "end_logit": 7.467247009277344,
+            "text": "immunomodulatory drugs",
+            "probability": 0.9996293783187866
+        },
+        {
+            "start_logit": 5.205739498138428,
+            "end_logit": 5.3426618576049805,
+            "text": "immunomodulatory agents",
+            "probability": 0.296346515417099
+        },
+        {
+            "start_logit": 5.056051731109619,
+            "end_logit": 5.057188987731934,
+            "text": "lenalidomide",
+            "probability": 0.19178399443626404
+        },
+        {
+            "start_logit": 4.4129438400268555,
+            "end_logit": 4.336548328399658,
+            "text": "pomalidomide",
+            "probability": 0.04903925955295563
+        },
+        {
+            "start_logit": 2.620840072631836,
+            "end_logit": 2.803192377090454,
+            "text": "DHFO",
+            "probability": 0.000773501698859036
+        },
+        {
+            "start_logit": 2.041898727416992,
+            "end_logit": 1.967137098312378,
+            "text": "Lenacapavir",
+            "probability": 0.00042834109626710415
+        },
+        {
+            "start_logit": 2.620840072631836,
+            "end_logit": -1.4917885065078735,
+            "text": "DHFO and its analogs",
+            "probability": 1.0548111276875716e-05
+        },
+        {
+            "start_logit": -3.053762197494507,
+            "end_logit": 2.803192377090454,
+            "text": "FO",
+            "probability": 2.6546856588538503e-06
+        },
+        {
+            "start_logit": -1.6527806520462036,
+            "end_logit": -1.409095287322998,
+            "text": "cereblon (cereblon",
+            "probability": 9.720302074356368e-08
+        },
+        {
+            "start_logit": -1.3116017580032349,
+            "end_logit": -5.805500030517578,
+            "text": "Cereb",
+            "probability": 2.2453741088668266e-09
+        }
+    ],
+    "63f03fc8f36125a426000021": [
+        {
+            "start_logit": 7.459623336791992,
+            "end_logit": 7.810479164123535,
+            "text": "human immunodeficiency virus",
+            "probability": 0.999887228012085
+        },
+        {
+            "start_logit": 7.10076904296875,
+            "end_logit": 7.1880035400390625,
+            "text": "human immunodeficiency virus type 1",
+            "probability": 0.6256930232048035
+        },
+        {
+            "start_logit": 5.626216888427734,
+            "end_logit": 1.5974910259246826,
+            "text": "HIV infection",
+            "probability": 0.04284907504916191
+        },
+        {
+            "start_logit": 4.1071953773498535,
+            "end_logit": 1.4193731546401978,
+            "text": "human immunodeficiency virus type 1 infection",
+            "probability": 0.007850241847336292
+        },
+        {
+            "start_logit": -2.808962821960449,
+            "end_logit": 7.270047187805176,
+            "text": "virus",
+            "probability": 0.0003765046421904117
+        },
+        {
+            "start_logit": -3.340195655822754,
+            "end_logit": 7.270047187805176,
+            "text": "immunodeficiency virus",
+            "probability": 0.00022133946185931563
+        },
+        {
+            "start_logit": 6.046738624572754,
+            "end_logit": -2.7919278144836426,
+            "text": "human immunodeficiency",
+            "probability": 7.446295057889074e-05
+        },
+        {
+            "start_logit": -3.6806557178497314,
+            "end_logit": 7.1880035400390625,
+            "text": "1",
+            "probability": 1.3003136700717732e-05
+        },
+        {
+            "start_logit": -4.566475868225098,
+            "end_logit": 7.1880035400390625,
+            "text": "type 1",
+            "probability": 5.3621779443346895e-06
+        }
+    ]
+}
