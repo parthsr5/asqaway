@@ -87,6 +87,6 @@ if __name__ == "__main__":
         json.dump(out, f, indent=4)
     train_data, test_data = generate_splits(out)
     with open('train_file_80_yesno.json', 'w') as f:
-        json.dump(train_data, f)
+        json.dump(train_data['data'], f)
     with open('test_file_80_yesno.json', 'w') as f:
-        json.dump(test_data, f)
+        json.dump(test_data['data'], f)
