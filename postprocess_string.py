@@ -8,7 +8,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 CONF_THRESH = 0.0
 
 
-models = "biom-electra biom-albert".split()
+models = "biom-electra biom-albert biobert".split()
 split = "eval"
 MAX_THREADS = 32
 

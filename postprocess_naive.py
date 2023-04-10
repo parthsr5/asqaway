@@ -8,7 +8,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 CONF_THRESH = 0.0
 
 
-models = "biom-electra biom-albert".split()
+models = "biom-electra biom-albert biobert".split()
 split = "eval"
 MAX_THREADS = 32
 
@@ -21,7 +21,7 @@ def remove_synonyms(id, pred):
     for p in pred:
         if p['probability'] < CONF_THRESH:
             break
-        if p['text'] not in {p_['test'] for p_ in answers}:
+        if p['text'] not in {p_['text'] for p_ in answers}:
             answers.append(p)
     return id, answers
 
