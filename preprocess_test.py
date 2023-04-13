@@ -4,6 +4,7 @@ import os
 import re
 from tqdm import tqdm
 import pdb
+from time import sleep
 
 import concurrent
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -16,6 +17,12 @@ metamap_bin_dir = 'bin/metamap20'
 metamap_pos_server_dir = 'bin/skrmedpostctl'
 metamap_wsd_server_dir = 'bin/wsdserverctl'
 MAX_THREADS = 32
+
+# os.system(metamap_base_dir + metamap_pos_server_dir + ' start') # Part of speech tagger
+# os.system(metamap_base_dir + metamap_wsd_server_dir + ' start') # Word sense disambiguation 
+
+# Sleep a bit to give time for these servers to start up
+# sleep(60)
 
 metam = MetaMap.get_instance(metamap_base_dir + metamap_bin_dir)
 
@@ -122,22 +129,23 @@ def preprocess_dataset(dataset, AA):
 
 
 if __name__ == "__main__":
-    infile = "test/BioASQ-task11bPhaseB-testset1.json"
+    batch = '2'
+    infile = f"test/BioASQ-task11bPhaseB-testset{batch}.json"
     x = json.load(open(infile))
 
     # Load the acronyms/abbreviations dict
-    if not os.path.exists("umls_data_test.json"):
+    if not os.path.exists(f"test/umls_data_test{batch}.json"):
         AA = load_AA(x['questions'])
         try:
-            with open('umls_data_test.json', 'w') as f:
+            with open(f'test/umls_data_test{batch}.json', 'w') as f:
                 print('Length of AA -', len(AA))
                 json.dump(AA, f)
         except Exception as e: print(e)
     else:
-        AA = json.load(open('umls_data_test.json'))
+        AA = json.load(open(f'test/umls_data_test{batch}.json'))
 
     # Process the file
     processed = preprocess_dataset(x['questions'], AA)
     out = {'data': processed}
-    with open('test/test1_file.json', 'w') as f:
+    with open(f'test/test{batch}_file.json', 'w') as f:
         json.dump(out, f, indent=4)
