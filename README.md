@@ -28,7 +28,7 @@ This is the code repository of ASQAway team, participating in the [BioASQ Task 1
     │   └── ...
     ├── postprocess
     ├── preprocess
-    ├── BioASQ-training11b.json
+    ├── BioASQ-training11b.zip
     └── ...
     
     
