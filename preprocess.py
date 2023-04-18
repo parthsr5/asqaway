@@ -136,7 +136,7 @@ def preprocess_dataset(dataset, AA):
     return processed
 
 def generate_splits(dataset):
-    data = x['data']
+    data = dataset['data']
     s = set()
     for i in data:
         s.add(i['id'][:i['id'].find('_')])
