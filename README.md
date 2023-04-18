@@ -28,7 +28,6 @@ This is the code repository of ASQAway team, participating in the [BioASQ Task 1
     │   └── ...
     ├── postprocess
     ├── preprocess
-    ├── .gitignore
     ├── BioASQ-training11b.json
     └── ...
     
