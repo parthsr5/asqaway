@@ -14,18 +14,18 @@ This is the code repository of ASQAway team, participating in the [BioASQ Task 1
 
     ├── data
     │   ├── train
-    │   ├── test_batches
+    │   └── test_batches
     ├── model_results
     │   ├── biobert
     │   ├── biom-albert
-    │   ├── biom-electra
+    │   └── biom-electra
     ├── notebooks
     │   ├── exploratory_notebooks
     │   ├── Adversarial Finetuning_Eval.ipynb
     │   ├── Ensembling.ipynb
     │   ├── Model Finetuning_Eval.ipynb
     │   ├── Model Testing.ipynb
-    │   ├── ...
+    │   └── ...
     ├── postprocess
     ├── preprocess
     ├── .gitignore
