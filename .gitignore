@@ -2,6 +2,12 @@
 __pycache__
 .ipynb_checkpoints/
 BioASQ-training11b/
+BioASQ-training11b.zip
+data/train/test_file*
+data/train/train_file*
+data/train/preprocessed-training11b.json
+data/test_batches/BioASQ-task11bPhaseB-testset*
+data/test_batches/test*
 skr_web_python_api/
 umls/
 nohup.out
