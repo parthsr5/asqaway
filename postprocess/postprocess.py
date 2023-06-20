@@ -15,7 +15,7 @@ metamap_bin_dir = 'bin/metamap20'
 metamap_pos_server_dir = 'bin/skrmedpostctl'
 metamap_wsd_server_dir = 'bin/wsdserverctl'
 
-models = "biom-electra biom-albert".split()
+models = "biom-electra biobert".split()
 split = "predict"
 MAX_THREADS = 32
 
