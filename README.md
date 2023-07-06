@@ -37,14 +37,15 @@ Biomedical Question Answering using Transformer Ensembling, CLEF 2023 - Raghav R
 (BibTex will be updated soon)
 ```
 
-Overview of the BioASQ11 lab and corresponding BioASQ task
+Overview of the BioASQ11 lab and corresponding BioASQ task - 
 ```
 @inproceedings{BioASQ2023overview,
     title={{Overview of BioASQ 2023: The eleventh BioASQ challenge on Large-Scale Biomedical Semantic Indexing and Question Answering}},
     author={Nentidis, Anastasios and Katsimpras, Georgios and Krithara, Anastasia and Lima-López, Salvador and Farré-Maduell, Eulàlia and Gasco, Luis and Krallinger, Martin and Paliouras, Georgios},
     booktitle={ Experimental IR Meets Multilinguality, Multimodality, and Interaction. Proceedings of the Fourteenth International Conference of the CLEF Association (CLEF 2023)
 }
-
+```
+```
 @inproceedings{BioASQ2023task11bSynergy,
     title={{Overview of BioASQ Tasks 11b and Synergy11 in CLEF2023}},
     author={Nentidis, Anastasios and Katsimpras, Georgios and Krithara, Anastasia and Paliouras, Georgios},
@@ -52,7 +53,7 @@ Overview of the BioASQ11 lab and corresponding BioASQ task
 }
 ```
 
-BioASQ Task 11b dataset
+BioASQ Task 11b dataset -
 ```
 @article{krithara2023bioasq,
     title={{BioASQ-QA: A manually curated corpus for Biomedical Question Answering}},
