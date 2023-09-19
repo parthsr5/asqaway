@@ -28,7 +28,6 @@ This is the code repository for "Biomedical Question Answering using Transformer
     │   └── ...
     ├── postprocess
     ├── preprocess
-    ├── BioASQ-training11b.zip
     └── ...
     
 ## References
